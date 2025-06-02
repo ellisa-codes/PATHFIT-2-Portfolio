@@ -8,7 +8,7 @@ export default function MidtermReflectionPage() {
       <Section className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20">
         <PageHeader
           title="Midterm Reflection"
-          description="My thoughts and insights from the first half of the PATHFIT 1 course"
+          description="My thoughts and insights from the first half of the PATHFIT 2 course"
         />
       </Section>
 
@@ -19,7 +19,7 @@ export default function MidtermReflectionPage() {
               <h2 className="text-2xl font-bold">Learning Journey</h2>
               <div className="mt-4 space-y-4">
                 <p>
-                  As I reflect on the first half of the PATHFIT 1 course, I'm amazed at how much I've learned about
+                  As I reflect on the first half of the PATHFIT 2 course, I'm amazed at how much I've learned about
                   health, fitness, and overall well-being. The journey began with understanding the fundamental concepts
                   of physical fitness and its importance in our daily lives.
                 </p>
@@ -121,7 +121,7 @@ export default function MidtermReflectionPage() {
                 </p>
                 <p>
                   Overall, I'm grateful for the knowledge and experiences gained so far and am committed to continuing
-                  this journey of growth and learning in the second half of the PATHFIT 1 course.
+                  this journey of growth and learning in the second half of the PATHFIT 2 course.
                 </p>
               </div>
             </CardContent>

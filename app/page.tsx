@@ -17,16 +17,19 @@ export default function Home() {
           <div className="space-y-8 animate-in slide-in-from-left-8 duration-1000">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="block bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                John Doe
+                Ellisa Shammah Bonete
               </span>
               <span className="block mt-2 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                PATHFIT 1 Journey
+                PATHFIT 2 Journey
               </span>
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
-              Welcome to my portfolio showcasing my journey through the PATHFIT 1 course. Explore my reflections,
+              Welcome to my portfolio showcasing my journey through the PATHFIT 2 course.
+              </p>
+            <p className="text-lg text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
+              Explore my reflections,
               activities, and growth throughout this health and fitness journey.
-            </p>
+              </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
               <Button asChild size="lg" className="group transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <Link href="/food-activity">
@@ -62,7 +65,7 @@ export default function Home() {
 
       <Section spacing="lg">
         <div className="space-y-12">
-          <PageHeader title="Who Am I?" description="Get to know me and my journey through PATHFIT 1" />
+          <PageHeader title="Who Am I?" description="Get to know me and my journey through PATHFIT 2" />
           <div className="grid gap-12 md:grid-cols-2 lg:gap-16">
             <div className="space-y-6 animate-in slide-in-from-left-6 duration-1000">
               <h3 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
@@ -70,14 +73,12 @@ export default function Home() {
               </h3>
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  Hello! I'm John Doe, a student passionate about health and fitness. I'm currently pursuing my degree
-                  in [Your Program] at [Your University]. Through the PATHFIT 1 course, I've gained valuable insights
+                  Hello! I'm Ellisa Shammah Bonete, a first-year college student passionate about health and fitness. I'm currently pursuing my degree
+                  in BS Information Technology at West Visayas State University. Through the PATHFIT 2 course, I've gained valuable insights
                   into maintaining a healthy lifestyle and understanding the importance of physical activity.
                 </p>
                 <p>
-                  Outside of academics, I enjoy [Your Hobbies/Interests], which helps me maintain a balanced lifestyle.
-                  I believe that physical and mental well-being go hand in hand, and I'm excited to share my journey
-                  with you through this portfolio.
+                  Outside of academics, I enjoy playing the guitar, listening to music, reading books, watching anime and K-dramas, doing photography, cycling, traveling, and more — all of which help me maintain a balanced lifestyle. I believe that physical and mental well-being go hand in hand, and I'm excited to share my journey with you through this portfolio.
                 </p>
               </div>
             </div>
@@ -88,13 +89,13 @@ export default function Home() {
               <div className="space-y-4 rounded-lg bg-gradient-to-r from-pink-50 to-blue-50 dark:from-pink-900/20 dark:to-blue-900/20 p-6 shadow-sm">
                 <div className="space-y-3 text-lg">
                   <p>
-                    <strong className="text-primary">Course:</strong> PATHFIT 1
+                    <strong className="text-primary">Course:</strong> PATHFIT 2
                   </p>
                   <p>
-                    <strong className="text-primary">Instructor:</strong> Prof. [Instructor Name]
+                    <strong className="text-primary">Instructor:</strong> Prof. Jude Reyben Geroy Jadera
                   </p>
                   <p>
-                    <strong className="text-primary">Semester:</strong> [Current Semester]
+                    <strong className="text-primary">Semester:</strong> 2nd Semester
                   </p>
                   <p>
                     <strong className="text-primary">Focus Areas:</strong> Physical Activity, Health, Nutrition,
@@ -122,7 +123,7 @@ export default function Home() {
             {[
               {
                 title: "Food & Activity",
-                description: "Explore my nutritional journey with Pinggang Pinoy",
+                description: "Explore my nutritional journey with Pathfit Cocina",
                 link: "/food-activity",
                 gradient: "from-green-400 to-blue-400",
               },
@@ -133,7 +134,7 @@ export default function Home() {
                 gradient: "from-purple-400 to-pink-400",
               },
               {
-                title: "PE Day 2024",
+                title: "PE Day 2025",
                 description: "Photos and highlights from this special event",
                 link: "/pe-day",
                 gradient: "from-blue-400 to-green-400",

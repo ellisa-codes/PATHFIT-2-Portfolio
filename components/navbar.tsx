@@ -13,7 +13,7 @@ const navItems = [
   { name: "Food & Activity", href: "/food-activity" },
   { name: "Advocacy", href: "/advocacy" },
   { name: "Midterm Reflection", href: "/midterm-reflection" },
-  { name: "PE Day 2024", href: "/pe-day" },
+  { name: "PE Day 2025", href: "/pe-day" },
   { name: "Finals Reflection", href: "/finals-reflection" },
   { name: "Health Trivias", href: "/health-trivias" },
   { name: "Message", href: "/message" },
@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold tracking-tight">PATHFIT 1 Journey</span>
+          <span className="text-xl font-bold tracking-tight">PATHFIT 2 Journey</span>
         </Link>
 
         {/* Desktop navigation */}

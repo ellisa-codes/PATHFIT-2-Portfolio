@@ -126,9 +126,9 @@ export default function MessagePage() {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold">A Personal Note</h2>
                 <div className="mt-4 space-y-4">
-                  <p>Dear Professor [Instructor Name],</p>
+                  <p>Dear Professor Jadera,</p>
                   <p>
-                    I want to express my heartfelt gratitude for your guidance throughout the PATHFIT 1 course. Your
+                    I want to express my heartfelt gratitude for your guidance throughout the PATHFIT 2 course. Your
                     teaching approach has made learning about health and fitness both engaging and meaningful. The way
                     you connected theoretical concepts with practical applications helped me understand not just the
                     "what" but also the "why" behind healthy living practices.
@@ -153,7 +153,7 @@ export default function MessagePage() {
                   <p>
                     With sincere appreciation,
                     <br />
-                    John Doe
+                    Ellisa Shammah Bonete
                   </p>
                 </div>
               </CardContent>

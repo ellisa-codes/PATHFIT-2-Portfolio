@@ -40,7 +40,7 @@ export default function PEDayPage() {
   return (
     <>
       <Section className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20">
-        <PageHeader title="PE Day 2024" description="Highlights and memories from our annual Physical Education Day" />
+        <PageHeader title="PE Day 2025" description="Highlights and memories from our annual Physical Education Day" />
       </Section>
 
       <Section>
@@ -48,7 +48,7 @@ export default function PEDayPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">Event Overview</h2>
             <p className="text-lg">
-              PE Day 2024 was a celebration of physical fitness, teamwork, and the joy of movement. Held on [Event
+              PE Day 2025 was a celebration of physical fitness, teamwork, and the joy of movement. Held on [Event
               Date], the event brought together students from various classes to participate in a day filled with
               sports, games, fitness challenges, and performances.
             </p>

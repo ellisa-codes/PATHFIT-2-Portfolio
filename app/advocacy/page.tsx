@@ -206,13 +206,13 @@ const successStories = [
     impact: "Found community and reduced feelings of isolation",
   },
   {
-    name: "Taylor",
+    name: "Hannah",
     story:
       "The Mental Health Resource Guide helped me find counseling services when I was struggling with anxiety. I wouldn't have known where to turn without it.",
     impact: "Connected with professional support services",
   },
   {
-    name: "Jordan",
+    name: "Dave",
     story:
       "Participating in Wellness Wednesdays gave me tools to manage stress during midterms. The breathing techniques I learned have become part of my daily routine.",
     impact: "Developed practical stress management skills",
@@ -564,7 +564,7 @@ export default function AdvocacyPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <h3 className="text-2xl font-bold mb-4">Join the Movement</h3>
+            <h3 className="text-2xl font-bold mb-4">Join the Movement!</h3>
             <p className="text-lg mb-6">
               Ready to make a difference in mental health awareness on campus? Get involved with the Mind Matters
               campaign today!
@@ -583,26 +583,26 @@ export default function AdvocacyPage() {
         <div className="mx-auto max-w-3xl space-y-6 text-center">
           <h2 className="text-3xl font-bold">Impact and Outcomes</h2>
           <p className="text-lg">
-            Through my advocacy work, I've been able to reach over 200 students, providing them with mental health
+            Through my advocacy work, I've been able to reach over 100 students, providing them with mental health
             resources and support. Feedback from participants has been overwhelmingly positive, with many reporting
             increased awareness of mental health issues and improved self-care practices.
           </p>
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="rounded-lg bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900/30 dark:to-green-800/30 p-6 shadow-sm transition-transform duration-300 hover:scale-105">
               <p className="text-4xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
-                200+
+                100+
               </p>
               <p className="text-sm">Students Reached</p>
             </div>
             <div className="rounded-lg bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 p-6 shadow-sm transition-transform duration-300 hover:scale-105">
               <p className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                5
+                3
               </p>
               <p className="text-sm">Workshops Conducted</p>
             </div>
             <div className="rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 p-6 shadow-sm transition-transform duration-300 hover:scale-105">
               <p className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                92%
+                96%
               </p>
               <p className="text-sm">Positive Feedback</p>
             </div>

@@ -6,7 +6,7 @@ export default function FinalsReflectionPage() {
   return (
     <>
       <Section className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
-        <PageHeader title="Finals Reflection" description="Looking back on my complete PATHFIT 1 journey" />
+        <PageHeader title="Finals Reflection" description="Looking back on my complete PATHFIT 2 journey" />
       </Section>
 
       <Section>
@@ -16,9 +16,9 @@ export default function FinalsReflectionPage() {
               <h2 className="text-2xl font-bold">Course Overview</h2>
               <div className="mt-4 space-y-4">
                 <p>
-                  As I reach the end of my PATHFIT 1 journey, I'm taking time to reflect on the comprehensive experience
+                  As I reach the end of my PATHFIT 2 journey, I'm taking time to reflect on the comprehensive experience
                   this course has provided. From the theoretical foundations of health and fitness to practical
-                  applications in daily life, PATHFIT 1 has equipped me with knowledge and skills that extend far beyond
+                  applications in daily life, PATHFIT 2 has equipped me with knowledge and skills that extend far beyond
                   the classroom.
                 </p>
                 <p>The course covered a wide range of topics, including:</p>
@@ -103,7 +103,7 @@ export default function FinalsReflectionPage() {
               <h2 className="text-2xl font-bold">Moving Forward</h2>
               <div className="mt-4 space-y-4">
                 <p>
-                  As I complete PATHFIT 1, I'm not viewing this as the end of a journey but rather as the beginning of a
+                  As I complete PATHFIT 2, I'm not viewing this as the end of a journey but rather as the beginning of a
                   lifelong commitment to health and well-being. Moving forward, I plan to:
                 </p>
                 <ul className="ml-6 list-disc space-y-2">
@@ -129,7 +129,7 @@ export default function FinalsReflectionPage() {
                   </li>
                 </ul>
                 <p>
-                  PATHFIT 1 has provided me with a strong foundation, but the journey of health and fitness is ongoing.
+                  PATHFIT 2 has provided me with a strong foundation, but the journey of health and fitness is ongoing.
                   I'm grateful for the knowledge, skills, and perspectives I've gained and am excited to continue
                   building upon them in the future.
                 </p>
@@ -142,13 +142,13 @@ export default function FinalsReflectionPage() {
               <h2 className="text-2xl font-bold">Gratitude</h2>
               <div className="mt-4 space-y-4">
                 <p>
-                  I want to express my sincere gratitude to our instructor, [Instructor Name], whose guidance,
+                  I want to express my sincere gratitude to our instructor, Mr. Jude Jadera, whose guidance,
                   expertise, and encouragement made this learning journey both informative and enjoyable. I also
                   appreciate my classmates, whose diverse perspectives enriched our discussions and whose support
                   created a positive learning environment.
                 </p>
                 <p>
-                  PATHFIT 1 has been more than just a course—it has been a transformative experience that has equipped
+                  PATHFIT 2 has been more than just a course—it has been a transformative experience that has equipped
                   me with knowledge and skills that will benefit me throughout my life. For that, I am truly thankful.
                 </p>
               </div>
