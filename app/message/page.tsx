@@ -33,7 +33,7 @@ export default function MessagePage() {
     <>
       <Section className="bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20">
         <PageHeader
-          title="Message for PATHFIT 1 Instructor"
+          title="Message for PATHFIT 2 Instructor"
           description="Share your thoughts and feedback about the course"
         />
       </Section>
