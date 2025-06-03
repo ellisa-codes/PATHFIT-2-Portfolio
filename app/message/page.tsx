@@ -60,7 +60,7 @@ export default function MessagePage() {
                 <div className="space-y-2">
                   <h4 className="font-medium">Favorite Activities</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Team sports and collaboration exercises</li>
+                    <li>• Individual and collaboration exercises</li>
                     <li>• Mindfulness and stress management sessions</li>
                     <li>• Nutrition planning workshops</li>
                     <li>• Fitness goal setting and tracking</li>

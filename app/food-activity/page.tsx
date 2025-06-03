@@ -2,8 +2,140 @@ import { PageHeader } from "@/components/page-header"
 import { Section } from "@/components/section"
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui/badge"
+import { Calendar, Clock, Utensils, Activity } from "lucide-react"
 
 export default function FoodActivityPage() {
+  // Sample food log data for a month
+  const foodLog = [
+    {
+      date: "2024-01-01",
+      meals: {
+        breakfast: ["Oatmeal with banana and honey", "Green tea"],
+        snack: ["Apple slices with peanut butter"],
+        lunch: ["Grilled chicken salad", "Brown rice", "Water"],
+        dinner: ["Baked salmon", "Steamed vegetables", "Quinoa"],
+      },
+    },
+    {
+      date: "2024-01-02",
+      meals: {
+        breakfast: ["Whole grain toast", "Scrambled eggs", "Orange juice"],
+        snack: ["Greek yogurt with berries"],
+        lunch: ["Vegetable soup", "Whole wheat bread", "Herbal tea"],
+        dinner: ["Lean beef stir-fry", "Brown rice", "Mixed vegetables"],
+      },
+    },
+    {
+      date: "2024-01-03",
+      meals: {
+        breakfast: ["Smoothie bowl with fruits", "Granola", "Almond milk"],
+        snack: ["Nuts and dried fruits"],
+        lunch: ["Tuna sandwich", "Side salad", "Water"],
+        dinner: ["Grilled tofu", "Sweet potato", "Green beans"],
+      },
+    },
+    {
+      date: "2024-01-04",
+      meals: {
+        breakfast: ["Pancakes with fresh fruits", "Maple syrup", "Coffee"],
+        snack: ["Protein bar"],
+        lunch: ["Chicken wrap", "Vegetable chips", "Iced tea"],
+        dinner: ["Fish tacos", "Black beans", "Avocado salad"],
+      },
+    },
+    {
+      date: "2024-01-05",
+      meals: {
+        breakfast: ["Cereal with milk", "Banana", "Orange juice"],
+        snack: ["Cheese and crackers"],
+        lunch: ["Pasta salad", "Grilled vegetables", "Sparkling water"],
+        dinner: ["Pork tenderloin", "Mashed potatoes", "Steamed broccoli"],
+      },
+    },
+  ]
+
+  // Sample physical activity data for Monday, Wednesday, Friday
+  const activitySchedule = [
+    {
+      date: "2024-01-01",
+      day: "Monday",
+      activities: [
+        { time: "6:00 AM", activity: "Morning Jog", duration: "30 minutes", intensity: "Moderate" },
+        { time: "7:00 PM", activity: "Strength Training", duration: "45 minutes", intensity: "High" },
+      ],
+    },
+    {
+      date: "2024-01-03",
+      day: "Wednesday",
+      activities: [
+        { time: "6:30 AM", activity: "Yoga Session", duration: "45 minutes", intensity: "Low" },
+        { time: "5:00 PM", activity: "Swimming", duration: "40 minutes", intensity: "Moderate" },
+      ],
+    },
+    {
+      date: "2024-01-05",
+      day: "Friday",
+      activities: [
+        { time: "7:00 AM", activity: "Cycling", duration: "50 minutes", intensity: "Moderate" },
+        { time: "6:30 PM", activity: "Basketball", duration: "60 minutes", intensity: "High" },
+      ],
+    },
+    {
+      date: "2024-01-08",
+      day: "Monday",
+      activities: [
+        { time: "6:00 AM", activity: "Running", duration: "35 minutes", intensity: "High" },
+        { time: "7:30 PM", activity: "Weight Lifting", duration: "50 minutes", intensity: "High" },
+      ],
+    },
+    {
+      date: "2024-01-10",
+      day: "Wednesday",
+      activities: [
+        { time: "6:30 AM", activity: "Pilates", duration: "40 minutes", intensity: "Moderate" },
+        { time: "5:30 PM", activity: "Tennis", duration: "60 minutes", intensity: "High" },
+      ],
+    },
+    {
+      date: "2024-01-12",
+      day: "Friday",
+      activities: [
+        { time: "7:00 AM", activity: "Hiking", duration: "90 minutes", intensity: "Moderate" },
+        { time: "6:00 PM", activity: "Core Workout", duration: "30 minutes", intensity: "Moderate" },
+      ],
+    },
+  ]
+
+  const getMealIcon = (mealType: string) => {
+    switch (mealType) {
+      case "breakfast":
+        return "🌅"
+      case "snack":
+        return "🍎"
+      case "lunch":
+        return "🌞"
+      case "dinner":
+        return "🌙"
+      default:
+        return "🍽️"
+    }
+  }
+
+  const getIntensityColor = (intensity: string) => {
+    switch (intensity) {
+      case "Low":
+        return "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400"
+      case "Moderate":
+        return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400"
+      case "High":
+        return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400"
+      default:
+        return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400"
+    }
+  }
+
   return (
     <>
       <Section className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20">
@@ -80,7 +212,111 @@ export default function FoodActivityPage() {
         </div>
       </Section>
 
+      {/* Food Log and Activity Tracker Section */}
       <Section className="bg-slate-50 dark:bg-slate-900">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold mb-4">Monthly Food & Activity Tracking</h2>
+          <p className="text-lg text-muted-foreground">
+            Comprehensive tracking of my dietary intake and physical activities throughout the month
+          </p>
+        </div>
+
+        <Tabs defaultValue="food-log" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsTrigger value="food-log" className="flex items-center gap-2">
+              <Utensils className="h-4 w-4" />
+              Food Log
+            </TabsTrigger>
+            <TabsTrigger value="activity-tracker" className="flex items-center gap-2">
+              <Activity className="h-4 w-4" />
+              Activity Tracker
+            </TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="food-log" className="space-y-6">
+            <div className="grid gap-6">
+              {foodLog.map((day, index) => (
+                <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/20 dark:to-blue-900/20">
+                    <CardTitle className="flex items-center gap-2">
+                      <Calendar className="h-5 w-5" />
+                      {new Date(day.date).toLocaleDateString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                      {Object.entries(day.meals).map(([mealType, foods]) => (
+                        <div key={mealType} className="space-y-3">
+                          <h4 className="font-semibold text-lg flex items-center gap-2 capitalize">
+                            <span className="text-2xl">{getMealIcon(mealType)}</span>
+                            {mealType}
+                          </h4>
+                          <ul className="space-y-2">
+                            {foods.map((food, foodIndex) => (
+                              <li key={foodIndex} className="text-sm bg-white dark:bg-slate-800 p-2 rounded-md border">
+                                {food}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="activity-tracker" className="space-y-6">
+            <div className="grid gap-6">
+              {activitySchedule.map((day, index) => (
+                <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20">
+                    <CardTitle className="flex items-center gap-2">
+                      <Calendar className="h-5 w-5" />
+                      {day.day} -{" "}
+                      {new Date(day.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <div className="grid gap-4 md:grid-cols-2">
+                      {day.activities.map((activity, activityIndex) => (
+                        <div key={activityIndex} className="bg-white dark:bg-slate-800 p-4 rounded-lg border space-y-3">
+                          <div className="flex items-center justify-between">
+                            <h4 className="font-semibold text-lg">{activity.activity}</h4>
+                            <Badge className={getIntensityColor(activity.intensity)}>{activity.intensity}</Badge>
+                          </div>
+                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                            <div className="flex items-center gap-1">
+                              <Clock className="h-4 w-4" />
+                              {activity.time}
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Activity className="h-4 w-4" />
+                              {activity.duration}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
+      </Section>
+
+      <Section>
         <h2 className="text-3xl font-bold">My Physical Activity Journey</h2>
         <p className="mt-4 text-lg text-muted-foreground">
           Tracking my physical activities and progress throughout the PATHFIT 1 course

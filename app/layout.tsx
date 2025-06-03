@@ -9,8 +9,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Ellisa Shammah Bonete - PATHFIT 2",
-  description: "Student portfolio for PATHFIT 2 Journey course",
+  title: "EllisaShammahBonete_PATHFIT2_Portfolio",
+  description: "A portfolio website for PATHFIT 2 Journey course",
     generator: 'v0.dev'
 }
 
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="flex min-h-screen flex-col bg-background">
+          <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />

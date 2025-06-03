@@ -2,45 +2,48 @@ import { PageHeader } from "@/components/page-header"
 import { Section } from "@/components/section"
 import { ImageGallery } from "@/components/image-gallery"
 
-export default function PEDayPage() {
-  // Sample PE Day photos - in a real implementation, these would be actual event photos
-  const peDayPhotos = [
+export default function PathfitCocinaPage() {
+  // Sample PATHFIT Cocina photos - cooking and food preparation activities
+  const cocinaPhotos = [
     {
-      src: "/placeholder.svg?height=600&width=800&text=PE+Day+Group+Photo",
-      alt: "PE Day Group Photo",
-      caption: "Group photo of all participants at PE Day 2024",
+      src: "/placeholder.svg?height=600&width=800&text=Group+Cooking+Session",
+      alt: "Group Cooking Session",
+      caption: "Students collaborating during the PATHFIT Cocina cooking session",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Sports+Activity",
-      alt: "Sports Activity",
-      caption: "Students participating in team sports activities",
+      src: "/placeholder.svg?height=600&width=800&text=Pinggang+Pinoy+Preparation",
+      alt: "Pinggang Pinoy Meal Preparation",
+      caption: "Preparing balanced meals following Pinggang Pinoy guidelines",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Fitness+Challenge",
-      alt: "Fitness Challenge",
-      caption: "The fitness challenge competition",
+      src: "/placeholder.svg?height=600&width=800&text=Healthy+Meal+Plating",
+      alt: "Healthy Meal Plating",
+      caption: "Creative plating of nutritious dishes by student groups",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Dance+Performance",
-      alt: "Dance Performance",
-      caption: "Dance performance showcasing traditional dances",
+      src: "/placeholder.svg?height=600&width=800&text=Cooking+Competition",
+      alt: "Cooking Competition",
+      caption: "Teams competing in the healthy cooking challenge",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Yoga+Session",
-      alt: "Yoga Session",
-      caption: "Morning yoga session to start the day",
+      src: "/placeholder.svg?height=600&width=800&text=Food+Tasting+Session",
+      alt: "Food Tasting Session",
+      caption: "Judges and students tasting the prepared healthy meals",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Awards+Ceremony",
-      alt: "Awards Ceremony",
-      caption: "Closing awards ceremony recognizing achievements",
+      src: "/placeholder.svg?height=600&width=800&text=Awards+and+Recognition",
+      alt: "Awards and Recognition",
+      caption: "Recognition ceremony for outstanding culinary creativity",
     },
   ]
 
   return (
     <>
-      <Section className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20">
-        <PageHeader title="PE Day 2025" description="Highlights and memories from our annual Physical Education Day" />
+      <Section className="bg-gradient-to-r from-orange-50 to-green-50 dark:from-orange-900/20 dark:to-green-900/20">
+        <PageHeader
+          title="PATHFIT Cocina"
+          description="Highlights and memories from our PATHFIT Cocina cooking activities"
+        />
       </Section>
 
       <Section>
@@ -48,50 +51,51 @@ export default function PEDayPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">Event Overview</h2>
             <p className="text-lg">
-              PE Day 2025 was a celebration of physical fitness, teamwork, and the joy of movement. Held on [Event
-              Date], the event brought together students from various classes to participate in a day filled with
-              sports, games, fitness challenges, and performances.
+              PATHFIT Cocina is a fun and interactive activity under the PATHFIT (Physical Activity Towards Health and
+              Fitness) program that focuses on nutrition and healthy eating. It combines practical cooking knowledge
+              with scientific nutrition concepts to help students understand the value of balanced meals. Using the
+              Pinggang Pinoy model as a guide, PATHFIT Cocina teaches how to prepare nutritious dishes that support
+              energy, focus, and overall wellness in everyday life.
             </p>
             <p>
-              The day began with an opening ceremony and warm-up exercises, followed by a series of rotating activities
-              that allowed students to experience different aspects of physical education. From team sports to
-              individual challenges, dance performances to yoga sessions, the event showcased the diversity of physical
-              activities covered in our PATHFIT curriculum.
+              The day began with each group preparing and plating their nutritious dishes, guided by the principles of
+              the Pinggang Pinoy model. Once the meals were ready, a panel of judges evaluated the dishes based on
+              presentation, balance, and nutritional value.
             </p>
             <p>
-              One of the highlights was the inter-class competition, where teams competed in various challenges that
-              tested strength, endurance, agility, and teamwork. The friendly competition fostered camaraderie and
-              school spirit while encouraging everyone to push their limits.
+              One of the highlights of the event was the food tasting, where everyone had the chance to sample each
+              group's creations. This not only made the experience enjoyable but also allowed students to appreciate the
+              variety and creativity in preparing healthy meals.
             </p>
           </div>
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">Photo Gallery</h2>
             <p>
-              Below are some memorable moments captured during PE Day 2024. These photos showcase the energy,
-              enthusiasm, and community spirit that made the event so special.
+              Below are some memorable moments captured during our PATHFIT Cocina cooking sessions. These photos
+              showcase the passion, enthusiasm, and community spirit that made the event so special.
             </p>
-            <ImageGallery images={peDayPhotos} />
+            <ImageGallery images={cocinaPhotos} />
           </div>
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">My Experience</h2>
             <p>
-              Participating in PE Day 2024 was a highlight of my PATHFIT 1 journey. The event allowed me to apply the
-              skills and knowledge I've gained throughout the course in a fun, collaborative environment. I particularly
-              enjoyed the team challenges, which pushed me outside my comfort zone while reinforcing the importance of
-              teamwork and communication.
+              Participating in PATHFIT Cocina 2024 was a memorable highlight of my PATHFIT 2 journey. The activity gave
+              me a deeper understanding of how nutrition supports an active and healthy lifestyle. It was exciting to
+              apply what we learned in class by actually preparing and presenting balanced meals guided by the Pinggang
+              Pinoy model.
             </p>
             <p>
-              The day also gave me a deeper appreciation for the diversity of physical activities available to us.
-              Watching my peers excel in different areas—whether it was dance, sports, or yoga—was inspiring and
-              reminded me that physical fitness comes in many forms.
+              I especially enjoyed collaborating with my group during the cooking and plating process. It allowed us to
+              be creative while also staying mindful of nutritional value. Seeing the variety of dishes prepared by
+              other groups showed me how healthy food can also be fun, diverse, and culturally meaningful.
             </p>
             <p>
-              Perhaps most importantly, PE Day reinforced the joy of movement. In our often sedentary academic lives, it
-              was refreshing to spend a day fully engaged in physical activity, surrounded by the energy and enthusiasm
-              of my peers. The event left me with a renewed commitment to incorporating regular physical activity into
-              my routine and exploring new forms of movement that bring me joy.
+              Most of all, PATHFIT Cocina reminded me that taking care of our bodies starts with what we put on our
+              plates. It was an eye-opening and rewarding experience that inspired me to make better food choices and to
+              share what I've learned with others. It wasn't just a cooking activity — it was a step toward a healthier
+              lifestyle.
             </p>
           </div>
 
@@ -99,26 +103,50 @@ export default function PEDayPage() {
             <h2 className="text-3xl font-bold">Key Takeaways</h2>
             <ul className="ml-6 list-disc space-y-2">
               <li>
-                <strong>Community Building:</strong> PE Day demonstrated how physical activities can bring people
-                together, fostering connections and building community.
+                <strong>Practical Nutrition Application:</strong> PATHFIT Cocina demonstrated how to apply the Pinggang
+                Pinoy guidelines in real cooking scenarios, making nutrition education hands-on and memorable.
               </li>
               <li>
-                <strong>Diverse Approaches to Fitness:</strong> The variety of activities showcased that there are many
-                paths to physical fitness, allowing everyone to find activities that resonate with them.
+                <strong>Creative Healthy Cooking:</strong> The activity showed that healthy meals can be both nutritious
+                and delicious, encouraging creativity in meal preparation while maintaining nutritional balance.
               </li>
               <li>
-                <strong>Practical Application:</strong> The event provided an opportunity to apply the theoretical
-                knowledge from our PATHFIT course in practical, real-world scenarios.
+                <strong>Teamwork and Collaboration:</strong> Working in groups during the cooking process fostered
+                teamwork and allowed us to learn from each other's culinary skills and cultural food traditions.
               </li>
               <li>
-                <strong>Joy of Movement:</strong> Above all, PE Day reminded us that physical activity should be
-                enjoyable and can be a source of joy, not just a requirement for health.
+                <strong>Food as Medicine:</strong> The experience reinforced the concept that food is medicine, and that
+                proper nutrition is fundamental to supporting an active and healthy lifestyle.
               </li>
               <li>
-                <strong>Celebration of Progress:</strong> The event celebrated the progress we've all made in our
-                fitness journeys, regardless of our starting points or natural abilities.
+                <strong>Sustainable Healthy Habits:</strong> PATHFIT Cocina inspired long-term commitment to making
+                better food choices and incorporating balanced nutrition into daily life beyond the classroom.
               </li>
             </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold">Cooking Techniques Learned</h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-lg border">
+                <h4 className="font-semibold text-lg mb-2">🥗 Healthy Preparation Methods</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• Steaming vegetables to retain nutrients</li>
+                  <li>• Grilling proteins without excess oil</li>
+                  <li>• Using herbs and spices for flavor</li>
+                  <li>• Proper portion control techniques</li>
+                </ul>
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-lg border">
+                <h4 className="font-semibold text-lg mb-2">🍽️ Pinggang Pinoy Implementation</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• Balancing Go, Grow, and Glow foods</li>
+                  <li>• Creative plating for visual appeal</li>
+                  <li>• Incorporating local ingredients</li>
+                  <li>• Understanding food group proportions</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
