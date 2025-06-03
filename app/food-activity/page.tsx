@@ -17,8 +17,8 @@ export default function FoodActivityPage() {
           photo: "/placeholder.svg?height=200&width=300&text=Healthy+Breakfast+Bowl",
         },
         snack: {
-          foods: ["Apple slices with peanut butter"],
-          photo: "/placeholder.svg?height=200&width=300&text=Apple+Peanut+Butter",
+          foods: ["1 cup of papaya shake"],
+          photo: "/March25Snack.jpg",
         },
         lunch: {
           foods: ["Grilled chicken salad", "Brown rice", "Water"],
