@@ -13,19 +13,20 @@ export default function FoodActivityPage() {
       date: "2025-03-25",
       meals: {
         breakfast: {
-          foods: ["2 cups of rice", "1 fried egg", "Dried fish", "Water"],
-          photo: "/March25Breakfast",
+          foods: ["Oatmeal with sandwich", "Milk"],
+          photo: "/placeholder.svg?height=200&width=300&text=Healthy+Breakfast+Bowl",
         },
         snack: {
-          foods: ["1 cup of papaya shake"],
-          photo: "/March25Snack.jpg",
+          foods: ["Apple slices with peanut butter"],
+          photo: "/placeholder.svg?height=200&width=300&text=Apple+Peanut+Butter",
         },
         lunch: {
-          foods: ["2 cups of rice", "Nilaga", "Sisig", "Coke"],
-          photo: "/March25Lunch},
+          foods: ["Grilled chicken salad", "Brown rice", "Water"],
+          photo: "/placeholder.svg?height=200&width=300&text=Grilled+Chicken+Salad",
+        },
         dinner: {
-          foods: ["1 cup of rice", "Adobo Squid", "Sardines with misua", "1 cup of water"],
-          photo: "/March25Dinner",
+          foods: ["Baked salmon", "Steamed vegetables", "Quinoa"],
+          photo: "/placeholder.svg?height=200&width=300&text=Salmon+Dinner+Plate",
         },
       },
     },
