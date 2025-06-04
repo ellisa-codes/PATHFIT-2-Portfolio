@@ -81,7 +81,7 @@ export default function FoodActivityPage() {
         },
         snack: {
           foods: ["Donut", "1 cup of iced coffee"],
-          photo: "/March28Snacks.jpg",
+          photo: "/March28Snack.jpg",
         },
         lunch: {
           foods: ["Chicken", "2 cups of rice", "1 cup of water"],
@@ -143,8 +143,8 @@ export default function FoodActivityPage() {
           photo: "/March31Breakfast.jpg",
         },
         snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/March31Snacks.jpg",
+          foods: ["Hawaiian pizza", "Meat delight pizza", "2 cups of water"],
+          photo: "/March31Snack.jpg",
         },
         lunch: {
           foods: ["Hawaiian pizza", "Meat delight pizza", "2 cups of water"],
