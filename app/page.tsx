@@ -192,7 +192,7 @@ export default function Home() {
   )
 }
 
-// Portfolio Card Component with Error Handling
+// Portfolio Card Component - Removed event handlers for SSR compatibility
 function PortfolioCard({
   section,
   index,
@@ -230,11 +230,6 @@ function PortfolioCard({
             className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
             sizes={isMobile ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"}
             priority={index < 2} // Prioritize loading for first two images
-            onError={(e) => {
-              // Fallback to a placeholder if image fails to load
-              const target = e.target as HTMLImageElement
-              target.src = `/placeholder.svg?height=400&width=600&text=${encodeURIComponent(section.title)}`
-            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
