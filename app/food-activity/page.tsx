@@ -17,16 +17,16 @@ export default function FoodActivityPage() {
           photo: "/placeholder.svg?height=200&width=300&text=Healthy+Breakfast+Bowl",
         },
         snack: {
-          foods: ["Apple slices with peanut butter"],
-          photo: "/placeholder.svg?height=200&width=300&text=Apple+Peanut+Butter",
+          foods: ["37° Coffee"],
+          photo: "/March25Snacks.jpg",
         },
         lunch: {
-          foods: ["Grilled chicken salad", "Brown rice", "Water"],
-          photo: "/placeholder.svg?height=200&width=300&text=Grilled+Chicken+Salad",
+          foods: ["Burger steak with rice", "Water"],
+          photo: "/March25Lunch.jpg",
         },
         dinner: {
-          foods: ["Baked salmon", "Steamed vegetables", "Quinoa"],
-          photo: "/placeholder.svg?height=200&width=300&text=Salmon+Dinner+Plate",
+          foods: ["Pork with rice", "Steamed potato", "Water"],
+          photo: "/March25Dinner.jpg",
         },
       },
     },
