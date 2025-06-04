@@ -34,11 +34,11 @@ export default function FoodActivityPage() {
       date: "2025-03-26",
       meals: {
         breakfast: {
-          foods: ["Whole grain toast", "Scrambled eggs", "Orange juice"],
+          foods: ["3 mini pancake", "1 glass of milk"],
           photo: "/March26Breakfast.jpg",
         },
         snack: {
-          foods: ["Greek yogurt with berries"],
+          foods: ["French fries", "Fishball"],
           photo: "/March26Snacks.jpg",
         },
         lunch: {
