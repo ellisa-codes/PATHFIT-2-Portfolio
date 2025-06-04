@@ -13,7 +13,7 @@ export default function FoodActivityPage() {
       date: "2025-03-25",
       meals: {
         breakfast: {
-          foods: ["3 mini pancake", "Milk"],
+          foods: ["3 mini pancakes", "Milk"],
           photo: "/March25Breakfast.jpg",
         },
         snack: {
@@ -34,7 +34,7 @@ export default function FoodActivityPage() {
       date: "2025-03-26",
       meals: {
         breakfast: {
-          foods: ["3 mini pancake", "1 glass of milk"],
+          foods: ["1 fried egg", "1 cup of rice", "1 cup of milk"],
           photo: "/March26Breakfast.jpg",
         },
         snack: {
@@ -42,11 +42,11 @@ export default function FoodActivityPage() {
           photo: "/March26Snacks.jpg",
         },
         lunch: {
-          foods: ["Vegetable soup", "Whole wheat bread", "Herbal tea"],
+          foods: ["2 cups of rice", "Pork adobo", "Lechon", "Afritada"],
           photo: "/March26Lunch.jpg",
         },
         dinner: {
-          foods: ["Lean beef stir-fry", "Brown rice", "Mixed vegetables"],
+          foods: ["1 cup of rice", "Rellenong squid"],
           photo: "/March26Dinner.jpg",
         },
       },
@@ -55,19 +55,19 @@ export default function FoodActivityPage() {
       date: "2025-03-27",
       meals: {
         breakfast: {
-          foods: ["Smoothie bowl with fruits", "Granola", "Almond milk"],
+          foods: ["Burger steak", "1 cup of rice", "1 cup of water"],
           photo: "/March27Breakfast.jpg",
         },
         snack: {
-          foods: ["Nuts and dried fruits"],
+          foods: ["Pizza", "Mango shake", "Milktea"],
           photo: "/March27Snacks.jpg",
         },
         lunch: {
-          foods: ["Tuna sandwich", "Side salad", "Water"],
+          foods: ["Fried chicken", "1 cup of rice", "1 cup of water"],
           photo: "/March27Lunch.jpg",
         },
         dinner: {
-          foods: ["Grilled tofu", "Sweet potato", "Green beans"],
+          foods: ["Grilled steak", "2 cups of rice", "1 cup of water"],
           photo: "/March27Dinner.jpg",
         },
       },
@@ -76,19 +76,19 @@ export default function FoodActivityPage() {
       date: "2025-03-28",
       meals: {
         breakfast: {
-          foods: ["Pancakes with fresh fruits", "Maple syrup", "Coffee"],
+          foods: ["Longganisa", "1 cup of rice", "1 cup of water"],
           photo: "/March28Breakfast.jpg",
         },
         snack: {
-          foods: ["Protein bar"],
+          foods: ["Donut", "1 cup of iced coffee"],
           photo: "/March28Snacks.jpg",
         },
         lunch: {
-          foods: ["Chicken wrap", "Vegetable chips", "Iced tea"],
+          foods: ["Chicken", "2 cups of rice", "1 cup of water"],
           photo: "/March28Lunch.jpg",
         },
         dinner: {
-          foods: ["Fish tacos", "Black beans", "Avocado salad"],
+          foods: ["Pork", "2 bowls of rice", "Potato", "Lettuce", "1 cup of coke"],
           photo: "/March28Dinner.jpg",
         },
       },
@@ -101,8 +101,8 @@ export default function FoodActivityPage() {
           photo: "/March29Breakfast.jpg",
         },
         snack: {
-          foods: ["Cheese and crackers"],
-          photo: "/March29Snacks.jpg",
+          foods: ["Milktea"],
+          photo: "/March29Snack.jpg",
         },
         lunch: {
           foods: ["Pasta salad", "Grilled vegetables", "Sparkling water"],
@@ -122,7 +122,7 @@ export default function FoodActivityPage() {
           photo: "/March30Breakfast.jpg",
         },
         snack: {
-          foods: ["Mixed berries", "Almonds"],
+          foods: ["Buko shake"],
           photo: "/March30Snacks.jpg",
         },
         lunch: {
@@ -139,7 +139,7 @@ export default function FoodActivityPage() {
       date: "2025-03-31",
       meals: {
         breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+          foods: ["Chicken", "1 cup of rice", "Coconut flakes"],
           photo: "/March31Breakfast.jpg",
         },
         snack: {
@@ -147,7 +147,7 @@ export default function FoodActivityPage() {
           photo: "/March31Snacks.jpg",
         },
         lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+          foods: ["Hawaiian pizza", "Meat delight pizza", "2 cups of water"],
           photo: "/March31Lunch.jpg",
         },
         dinner: {
@@ -164,8 +164,8 @@ export default function FoodActivityPage() {
           photo: "/April1Breakfast.jpg",
         },
         snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/April1Snacks.jpg",
+          foods: ["Mango shake"],
+          photo: "/April1Snack.jpg",
         },
         lunch: {
           foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
@@ -571,7 +571,7 @@ export default function FoodActivityPage() {
         photo: "/April20Lunch.jpg",
       },
       dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        foods: ["Misua with sardines", "Squid adobo", "2 cups of rice", "1 cup of water"],
         photo: "/April20Dinner.jpg",
       },
     },
@@ -672,7 +672,7 @@ export default function FoodActivityPage() {
         photo: "/April25Snacks.jpg",
       },
       lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        foods: ["Nilaga", "Sisig", "2 cups of rice", "Coke"],
         photo: "/April25Lunch.jpg",
       },
       dinner: {
