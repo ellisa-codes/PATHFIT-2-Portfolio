@@ -13,7 +13,7 @@ export default function FoodActivityPage() {
       date: "2025-03-25",
       meals: {
         breakfast: {
-          foods: ["Oatmeal with sandwich", "Milk"],
+          foods: ["3 mini pancake", "Milk"],
           photo: "/March25Breakfast.jpg",
         },
         snack: {
@@ -885,7 +885,7 @@ export default function FoodActivityPage() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg border">
               <Image
-                src="/placeholder.svg?height=500&width=500&text=Pinggang+Pinoy+Diagram"
+                src="https://pbs.twimg.com/media/E7iddi3VkAQeG5L.jpg"
                 alt="Pinggang Pinoy Food Guide"
                 fill
                 className="object-cover"
@@ -896,7 +896,7 @@ export default function FoodActivityPage() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="order-2 md:order-1 relative aspect-square overflow-hidden rounded-lg border">
               <Image
-                src="/placeholder.svg?height=500&width=500&text=PATHFIT+Cocina"
+                src="/Cocina.jpg"
                 alt="PATHFIT Cocina"
                 fill
                 className="object-cover"
