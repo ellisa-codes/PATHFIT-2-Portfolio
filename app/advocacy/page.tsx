@@ -204,18 +204,24 @@ const successStories = [
     story:
       "Before joining the Peer Support Circle, I felt isolated and overwhelmed by my coursework. Now I have a community that understands my struggles and celebrates my victories.",
     impact: "Found community and reduced feelings of isolation",
+    image: "https://www.shutterstock.com/image-photo/portrait-cool-young-asian-philippines-260nw-2038343798.jpg", // Add this line
+    imageAlt: "Alex smiling confidently after joining the peer support group", // Add this line
   },
   {
     name: "Hannah",
     story:
       "The Mental Health Resource Guide helped me find counseling services when I was struggling with anxiety. I wouldn't have known where to turn without it.",
     impact: "Connected with professional support services",
+    image: "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/270f70ec-1d93-485d-9747-ca4450ba921d/2024-09-17T11:39:23.979Z.jpg", // Add this line
+    imageAlt: "Hannah holding mental health resources with a hopeful expression", // Add this line
   },
   {
     name: "Dave",
     story:
       "Participating in Wellness Wednesdays gave me tools to manage stress during midterms. The breathing techniques I learned have become part of my daily routine.",
     impact: "Developed practical stress management skills",
+    image: "https://www.shutterstock.com/image-photo/modern-education-concept-portrait-smiling-260nw-2018780909.jpg", // Add this line
+    imageAlt: "Dave practicing mindfulness techniques during a wellness session", // Add this line
   },
 ]
 
@@ -277,7 +283,7 @@ export default function AdvocacyPage() {
           <div className="relative rounded-xl overflow-hidden shadow-xl animate-in slide-in-from-right-6 duration-1000 delay-300">
             <div className="aspect-video relative">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Mental+Health+Advocacy"
+                src="https://rightsidestory.com/wp-content/uploads/2023/02/15.png"
                 alt="Students participating in a mental health awareness workshop"
                 fill
                 className="object-cover"
@@ -321,7 +327,7 @@ export default function AdvocacyPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="relative rounded-lg overflow-hidden shadow-md aspect-square">
               <Image
-                src="/placeholder.svg?height=300&width=300&text=Mindfulness+Practice"
+                src="https://sites.dartmouth.edu/mindfulness/files/2023/05/Copy-of-20230418-Meditation-kl-00-8.jpg"
                 alt="Students practicing mindfulness meditation"
                 fill
                 className="object-cover"
@@ -329,7 +335,7 @@ export default function AdvocacyPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden shadow-md aspect-square">
               <Image
-                src="/placeholder.svg?height=300&width=300&text=Support+Group+Session"
+                src="https://www.malvernbh.com/wp-content/uploads/2022/03/shutterstock_508251865-1-min-1-scaled.jpg"
                 alt="Students in a peer support circle"
                 fill
                 className="object-cover"
@@ -337,7 +343,7 @@ export default function AdvocacyPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden shadow-md aspect-square">
               <Image
-                src="/placeholder.svg?height=300&width=300&text=Self-Care+Activities"
+                src="https://images.theconversation.com/files/482162/original/file-20220831-12-x7euw1.jpg?ixlib=rb-4.1.0&rect=33%2C517%2C7315%2C3657&q=45&auto=format&w=1356&h=668&fit=crop"
                 alt="Student engaging in self-care activities"
                 fill
                 className="object-cover"
@@ -543,8 +549,8 @@ export default function AdvocacyPage() {
                   <div className="flex justify-center">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
                       <Image
-                        src={`/placeholder.svg?height=100&width=100&text=${story.name}`}
-                        alt={`${story.name}'s profile`}
+                        src={story.image || `/placeholder.svg?height=100&width=100&text=${story.name}`}
+                        alt={story.imageAlt || `${story.name}'s profile`}
                         fill
                         className="object-cover"
                       />

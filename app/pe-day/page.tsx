@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/page-header"
 import { Section } from "@/components/section"
 import { ImageGallery } from "@/components/image-gallery"
+import { RecipeSection } from "@/components/recipe-section"
 
 export default function PathfitCocinaPage() {
   // Sample PATHFIT Cocina photos - cooking and food preparation activities
@@ -150,6 +151,9 @@ export default function PathfitCocinaPage() {
           </div>
         </div>
       </Section>
+
+      {/* Recipe Section */}
+      <RecipeSection />
     </>
   )
 }

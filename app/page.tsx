@@ -23,7 +23,7 @@ const portfolioSections = [
     description: "Learn about my mental health campaign initiatives and community outreach",
     link: "/advocacy",
     gradient: "from-purple-400 to-pink-400",
-    image: "/placeholder.svg?height=400&width=600&text=Mental+Health+Advocacy",
+    image: "https://williamsrecord.com/wp-content/uploads/2022/02/News_Mental-Health_-Goel.jpg",
     imageAlt: "Mental health awareness and advocacy campaign",
   },
   {
@@ -41,7 +41,7 @@ const portfolioSections = [
     description: "Test your health knowledge with interactive quizzes and fun facts",
     link: "/health-trivias",
     gradient: "from-yellow-400 to-orange-400",
-    image: "/placeholder.svg?height=400&width=600&text=Health+Trivias+%26+Quizzes",
+    image: "https://www.shutterstock.com/image-illustration/did-you-know-concept-image-260nw-2101066714.jpg",
     imageAlt: "Health trivia and knowledge testing interface",
   },
 ]
