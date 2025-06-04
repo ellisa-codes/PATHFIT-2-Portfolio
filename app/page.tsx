@@ -50,7 +50,7 @@ export default function Home() {
           <div className="relative animate-in slide-in-from-right-8 duration-1000 delay-300">
             <div className="relative aspect-square overflow-hidden rounded-full border-4 border-gradient-to-r from-pink-400 to-blue-400 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/prof.jpg"
                 alt="Student Profile"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
@@ -160,7 +160,7 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="relative aspect-video overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=200&width=400&text=${item.title}`}
+                      src={`/food.jpg`}
                       alt={item.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
