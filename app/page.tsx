@@ -6,6 +6,46 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
 
+// Portfolio sections data with specific images
+const portfolioSections = [
+  {
+    id: "food-activity",
+    title: "Food & Activity",
+    description: "Explore my nutritional journey with Pinggang Pinoy and PATHFIT Cocina",
+    link: "/food-activity",
+    gradient: "from-green-400 to-blue-400",
+    image: "/food.jpg",
+    imageAlt: "Healthy food and nutrition following Pinggang Pinoy guidelines",
+  },
+  {
+    id: "health-advocacy",
+    title: "Health Advocacy",
+    description: "Learn about my mental health campaign initiatives and community outreach",
+    link: "/advocacy",
+    gradient: "from-purple-400 to-pink-400",
+    image: "https://williamsrecord.com/wp-content/uploads/2022/02/News_Mental-Health_-Goel.jpg",
+    imageAlt: "Mental health awareness and advocacy campaign",
+  },
+  {
+    id: "pe-day",
+    title: "PATHFIT Cocina",
+    description: "Photos and highlights from our cooking activities and healthy meal preparation",
+    link: "/pe-day",
+    gradient: "from-blue-400 to-green-400",
+    image: "/Cocina.jpg",
+    imageAlt: "PATHFIT Cocina cooking activities and healthy meal preparation",
+  },
+  {
+    id: "health-trivias",
+    title: "Health Trivias",
+    description: "Test your health knowledge with interactive quizzes and fun facts",
+    link: "/health-trivias",
+    gradient: "from-yellow-400 to-orange-400",
+    image: "https://www.shutterstock.com/image-illustration/did-you-know-concept-image-260nw-2101066714.jpg",
+    imageAlt: "Health trivia and knowledge testing interface",
+  },
+]
+
 export default function Home() {
   return (
     <>
@@ -25,11 +65,10 @@ export default function Home() {
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
               Welcome to my portfolio showcasing my journey through the PATHFIT 2 course.
-              </p>
+            </p>
             <p className="text-lg text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
-              Explore my reflections,
-              activities, and growth throughout this health and fitness journey.
-              </p>
+              Explore my reflections, activities, and growth throughout this health and fitness journey.
+            </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
               <Button asChild size="lg" className="group transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <Link href="/food-activity">
@@ -73,12 +112,16 @@ export default function Home() {
               </h3>
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  Hello! I'm Ellisa Shammah Bonete, a first-year college student passionate about health and fitness. I'm currently pursuing my degree
-                  in BS Information Technology at West Visayas State University. Through the PATHFIT 2 course, I've gained valuable insights
-                  into maintaining a healthy lifestyle and understanding the importance of physical activity.
+                  Hello! I'm Ellisa Shammah Bonete, a first-year college student passionate about health and fitness.
+                  I'm currently pursuing my degree in BS Information Technology at West Visayas State University.
+                  Through the PATHFIT 2 course, I've gained valuable insights into maintaining a healthy lifestyle and
+                  understanding the importance of physical activity.
                 </p>
                 <p>
-                  Outside of academics, I enjoy playing the guitar, listening to music, reading books, watching anime and K-dramas, doing photography, cycling, traveling, and more — all of which help me maintain a balanced lifestyle. I believe that physical and mental well-being go hand in hand, and I'm excited to share my journey with you through this portfolio.
+                  Outside of academics, I enjoy playing the guitar, listening to music, reading books, watching anime
+                  and K-dramas, doing photography, cycling, traveling, and more — all of which help me maintain a
+                  balanced lifestyle. I believe that physical and mental well-being go hand in hand, and I'm excited to
+                  share my journey with you through this portfolio.
                 </p>
               </div>
             </div>
@@ -118,73 +161,101 @@ export default function Home() {
         className="bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700"
       >
         <div className="space-y-12">
-          <PageHeader title="Portfolio Highlights" />
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                title: "Food & Activity",
-                description: "Explore my nutritional journey with Pathfit Cocina",
-                link: "/food-activity",
-                gradient: "from-green-400 to-blue-400",
-              },
-              {
-                title: "Health Advocacy",
-                description: "Learn about my health campaign initiatives",
-                link: "/advocacy",
-                gradient: "from-purple-400 to-pink-400",
-              },
-              {
-                title: "PE Day 2025",
-                description: "Photos and highlights from this special event",
-                link: "/pe-day",
-                gradient: "from-blue-400 to-green-400",
-              },
-              {
-                title: "Health Trivias",
-                description: "Test your health knowledge with fun facts",
-                link: "/health-trivias",
-                gradient: "from-yellow-400 to-orange-400",
-              },
-            ].map((item, index) => (
-              <Card
-                key={index}
-                className="group overflow-hidden transition-all duration-500 hover:shadow-xl hover:scale-105 hover:-translate-y-2 border-0 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm"
-              >
-                <CardHeader className={`bg-gradient-to-r ${item.gradient} text-white relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
-                  <CardTitle className="relative z-10 group-hover:scale-105 transition-transform duration-300">
-                    {item.title}
-                  </CardTitle>
-                  <CardDescription className="relative z-10 text-white/90">{item.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="p-0">
-                  <div className="relative aspect-video overflow-hidden">
-                    <Image
-                      src={`/food.jpg`}
-                      alt={item.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                </CardContent>
-                <CardFooter className="p-6">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
-                  >
-                    <Link href={item.link}>
-                      View Section{" "}
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
+          <PageHeader
+            title="Portfolio Highlights"
+            description="Explore the different aspects of my PATHFIT 2 journey"
+          />
+
+          {/* Desktop Grid Layout */}
+          <div className="hidden lg:grid lg:grid-cols-4 gap-8">
+            {portfolioSections.map((section, index) => (
+              <PortfolioCard key={section.id} section={section} index={index} />
+            ))}
+          </div>
+
+          {/* Tablet Layout */}
+          <div className="hidden md:grid md:grid-cols-2 lg:hidden gap-8">
+            {portfolioSections.map((section, index) => (
+              <PortfolioCard key={section.id} section={section} index={index} />
+            ))}
+          </div>
+
+          {/* Mobile Layout */}
+          <div className="grid grid-cols-1 md:hidden gap-6">
+            {portfolioSections.map((section, index) => (
+              <PortfolioCard key={section.id} section={section} index={index} isMobile />
             ))}
           </div>
         </div>
       </Section>
     </>
+  )
+}
+
+// Portfolio Card Component
+function PortfolioCard({
+  section,
+  index,
+  isMobile = false,
+}: {
+  section: (typeof portfolioSections)[0]
+  index: number
+  isMobile?: boolean
+}) {
+  return (
+    <Card
+      className={`group overflow-hidden transition-all duration-500 hover:shadow-xl hover:scale-105 hover:-translate-y-2 border-0 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm ${
+        isMobile ? "h-auto" : "h-full"
+      }`}
+      style={{
+        animationDelay: `${index * 100}ms`,
+      }}
+    >
+      <CardHeader className={`bg-gradient-to-r ${section.gradient} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+        <CardTitle className="relative z-10 group-hover:scale-105 transition-transform duration-300 text-lg font-bold">
+          {section.title}
+        </CardTitle>
+        <CardDescription className="relative z-10 text-white/90 text-sm leading-relaxed">
+          {section.description}
+        </CardDescription>
+      </CardHeader>
+
+      <CardContent className="p-0">
+        <div className={`relative overflow-hidden ${isMobile ? "aspect-[16/10]" : "aspect-video"}`}>
+          <Image
+            src={section.image || "/placeholder.svg"}
+            alt={section.imageAlt}
+            fill
+            className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+            sizes={isMobile ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"}
+            priority={index < 2} // Prioritize loading for first two images
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+          {/* Image overlay with section info */}
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-end">
+            <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+              <p className="text-sm font-medium">{section.title}</p>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+
+      <CardFooter className="p-6">
+        <Button
+          asChild
+          variant="outline"
+          className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 hover:shadow-md"
+        >
+          <Link href={section.link}>
+            <span className="flex items-center justify-center gap-2">
+              View Section
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </span>
+          </Link>
+        </Button>
+      </CardFooter>
+    </Card>
   )
 }
