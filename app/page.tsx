@@ -23,7 +23,7 @@ const portfolioSections = [
     description: "Learn about my mental health campaign initiatives and community outreach",
     link: "/advocacy",
     gradient: "from-purple-400 to-pink-400",
-    image: "https://williamsrecord.com/wp-content/uploads/2022/02/News_Mental-Health_-Goel.jpg",
+    image: "/placeholder.svg?height=400&width=600&text=Mental+Health+Advocacy",
     imageAlt: "Mental health awareness and advocacy campaign",
   },
   {
@@ -41,7 +41,7 @@ const portfolioSections = [
     description: "Test your health knowledge with interactive quizzes and fun facts",
     link: "/health-trivias",
     gradient: "from-yellow-400 to-orange-400",
-    image: "https://www.shutterstock.com/image-illustration/did-you-know-concept-image-260nw-2101066714.jpg",
+    image: "/placeholder.svg?height=400&width=600&text=Health+Trivias+%26+Quizzes",
     imageAlt: "Health trivia and knowledge testing interface",
   },
 ]
@@ -192,7 +192,7 @@ export default function Home() {
   )
 }
 
-// Portfolio Card Component
+// Portfolio Card Component with Error Handling
 function PortfolioCard({
   section,
   index,
@@ -230,6 +230,11 @@ function PortfolioCard({
             className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
             sizes={isMobile ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"}
             priority={index < 2} // Prioritize loading for first two images
+            onError={(e) => {
+              // Fallback to a placeholder if image fails to load
+              const target = e.target as HTMLImageElement
+              target.src = `/placeholder.svg?height=400&width=600&text=${encodeURIComponent(section.title)}`
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
