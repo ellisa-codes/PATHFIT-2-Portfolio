@@ -14,7 +14,7 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Oatmeal with sandwich", "Milk"],
-          photo: "/placeholder.svg?height=200&width=300&text=Healthy+Breakfast+Bowl",
+          photo: "/March25Breakfast.jpg",
         },
         snack: {
           foods: ["37° Coffee"],
@@ -35,19 +35,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Whole grain toast", "Scrambled eggs", "Orange juice"],
-          photo: "/placeholder.svg?height=200&width=300&text=Toast+and+Eggs",
+          photo: "/March26Breakfast.jpg",
         },
         snack: {
           foods: ["Greek yogurt with berries"],
-          photo: "/placeholder.svg?height=200&width=300&text=Berry+Yogurt+Bowl",
+          photo: "/March26Snacks.jpg",
         },
         lunch: {
           foods: ["Vegetable soup", "Whole wheat bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Vegetable+Soup+Lunch",
+          photo: "/March26Lunch.jpg",
         },
         dinner: {
           foods: ["Lean beef stir-fry", "Brown rice", "Mixed vegetables"],
-          photo: "/placeholder.svg?height=200&width=300&text=Beef+Stir+Fry",
+          photo: "/March26Dinner.jpg",
         },
       },
     },
@@ -56,19 +56,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Smoothie bowl with fruits", "Granola", "Almond milk"],
-          photo: "/placeholder.svg?height=200&width=300&text=Colorful+Smoothie+Bowl",
+          photo: "/March27Breakfast.jpg",
         },
         snack: {
           foods: ["Nuts and dried fruits"],
-          photo: "/placeholder.svg?height=200&width=300&text=Trail+Mix+Snack",
+          photo: "/March27Snacks.jpg",
         },
         lunch: {
           foods: ["Tuna sandwich", "Side salad", "Water"],
-          photo: "/placeholder.svg?height=200&width=300&text=Tuna+Sandwich+Meal",
+          photo: "/March27Lunch.jpg",
         },
         dinner: {
           foods: ["Grilled tofu", "Sweet potato", "Green beans"],
-          photo: "/placeholder.svg?height=200&width=300&text=Tofu+Dinner+Plate",
+          photo: "/March27Dinner.jpg",
         },
       },
     },
@@ -77,19 +77,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Pancakes with fresh fruits", "Maple syrup", "Coffee"],
-          photo: "/placeholder.svg?height=200&width=300&text=Fruit+Pancake+Stack",
+          photo: "/March28Breakfast.jpg",
         },
         snack: {
           foods: ["Protein bar"],
-          photo: "/placeholder.svg?height=200&width=300&text=Protein+Energy+Bar",
+          photo: "/March28Snacks.jpg",
         },
         lunch: {
           foods: ["Chicken wrap", "Vegetable chips", "Iced tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chicken+Wrap+Lunch",
+          photo: "/March28Lunch.jpg",
         },
         dinner: {
           foods: ["Fish tacos", "Black beans", "Avocado salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Fish+Taco+Dinner",
+          photo: "/March28Dinner.jpg",
         },
       },
     },
@@ -98,19 +98,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Cereal with milk", "Banana", "Orange juice"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cereal+Breakfast+Bowl",
+          photo: "/March29Breakfast.jpg",
         },
         snack: {
           foods: ["Cheese and crackers"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cheese+Crackers+Plate",
+          photo: "/March29Snacks.jpg",
         },
         lunch: {
           foods: ["Pasta salad", "Grilled vegetables", "Sparkling water"],
-          photo: "/placeholder.svg?height=200&width=300&text=Pasta+Salad+Bowl",
+          photo: "/March29Lunch.jpg",
         },
         dinner: {
           foods: ["Pork tenderloin", "Mashed potatoes", "Steamed broccoli"],
-          photo: "/placeholder.svg?height=200&width=300&text=Pork+Dinner+Plate",
+          photo: "/March29Dinner.jpg",
         },
       },
     },
@@ -119,19 +119,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Avocado toast", "Poached egg", "Green smoothie"],
-          photo: "/placeholder.svg?height=200&width=300&text=Avocado+Toast+Breakfast",
+          photo: "/March30Breakfast.jpg",
         },
         snack: {
           foods: ["Mixed berries", "Almonds"],
-          photo: "/placeholder.svg?height=200&width=300&text=Berry+Almond+Mix",
+          photo: "/March30Snacks.jpg",
         },
         lunch: {
           foods: ["Quinoa bowl", "Roasted vegetables", "Lemon water"],
-          photo: "/placeholder.svg?height=200&width=300&text=Quinoa+Veggie+Bowl",
+          photo: "/March30Lunch.jpg",
         },
         dinner: {
           foods: ["Grilled chicken breast", "Sweet potato fries", "Asparagus"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chicken+Sweet+Potato",
+          photo: "/March30Dinner.jpg",
         },
       },
     },
@@ -140,19 +140,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
+          photo: "/March31Breakfast.jpg",
         },
         snack: {
           foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
+          photo: "/March31Snacks.jpg",
         },
         lunch: {
           foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
+          photo: "/March31Lunch.jpg",
         },
         dinner: {
           foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
+          photo: "/March31Dinner.jpg",
         },
       },
     },
@@ -161,19 +161,19 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
+          photo: "/April1Breakfast.jpg",
         },
         snack: {
           foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
+          photo: "/April1Snacks.jpg",
         },
         lunch: {
           foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
+          photo: "/April1Lunch.jpg",
         },
         dinner: {
           foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
+          photo: "/April1Dinner.jpg",
         },
       },
     },
@@ -182,505 +182,505 @@ export default function FoodActivityPage() {
       meals: {
         breakfast: {
           foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
+          photo: "/April2Breakfast.jpg",
         },
         snack: {
           foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
+          photo: "/April2Snacks.jpg",
         },
         lunch: {
           foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
+          photo: "/April2Lunch.jpg",
         },
         dinner: {
           foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
+          photo: "/April2Dinner.jpg",
         },
       },
     },
     {
-      date: "2025-04-03",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+    date: "2025-04-03",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April3Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April3Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April3Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April3Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-04",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-04",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April4Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April4Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April4Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April4Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-05",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-05",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April5Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April5Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April5Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April5Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-06",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-06",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April6Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April6Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April6Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April6Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-07",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-07",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April7Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April7Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April7Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April7Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-08",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-08",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April8Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April8Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April8Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April8Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-09",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-09",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April9Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April9Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April9Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April9Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-10",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-10",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April10Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April10Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April10Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April10Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-11",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-11",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April11Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April11Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April11Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April11Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-12",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-12",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April12Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April12Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April12Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April12Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-13",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-13",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April13Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April13Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April13Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April13Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-14",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-14",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April14Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April14Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April14Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April14Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-15",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-15",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April15Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April15Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April15Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April15Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-16",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-16",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April16Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April16Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April16Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April16Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-17",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-17",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April17Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April17Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April17Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April17Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-18",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-18",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April18Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April18Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April18Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April18Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-19",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-19",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April19Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April19Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April19Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April19Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-20",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-20",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April20Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April20Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April20Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April20Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-21",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-21",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April21Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April21Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April21Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April21Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-22",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-22",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April22Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April22Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April22Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April22Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-23",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-23",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April23Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April23Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April23Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April23Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-24",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-24",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April24Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April24Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April24Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April24Dinner.jpg",
       },
     },
-    {
-      date: "2025-04-25",
-      meals: {
-        breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/placeholder.svg?height=200&width=300&text=Chia+Pudding+Bowl",
-        },
-        snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/placeholder.svg?height=200&width=300&text=Hummus+Carrot+Sticks",
-        },
-        lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/placeholder.svg?height=200&width=300&text=Mediterranean+Salad",
-        },
-        dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/placeholder.svg?height=200&width=300&text=Cod+Rice+Dinner",
-        },
+  },
+  {
+    date: "2025-04-25",
+    meals: {
+      breakfast: {
+        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
+        photo: "/April25Breakfast.jpg",
+      },
+      snack: {
+        foods: ["Hummus with carrots"],
+        photo: "/April25Snacks.jpg",
+      },
+      lunch: {
+        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
+        photo: "/April25Lunch.jpg",
+      },
+      dinner: {
+        foods: ["Baked cod", "Rice pilaf", "Green salad"],
+        photo: "/April25Dinner.jpg",
       },
     },
+  },
   ]
 
   // Sample physical activity data with daily photos
