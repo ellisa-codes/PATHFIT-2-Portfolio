@@ -1,13 +1,10 @@
 import { PageHeader } from "@/components/page-header"
 import { Section } from "@/components/section"
-import Image from "next/image"
+import { RobustImage } from "@/components/robust-image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from "@/components/ui/badge"
-import { Calendar, Clock, Utensils, Activity } from "lucide-react"
+import { ScrollableLogContainer } from "@/components/scrollable-log-container"
 
 export default function FoodActivityPage() {
-  // Sample food log data for a month with photo URLs
   const foodLog = [
     {
       date: "2025-03-25",
@@ -97,20 +94,20 @@ export default function FoodActivityPage() {
       date: "2025-03-29",
       meals: {
         breakfast: {
-          foods: ["Cereal with milk", "Banana", "Orange juice"],
-          photo: "/March29Breakfast.jpg",
+          foods: ["Tapsilog", "Banana", "Orange juice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Tapsilog+Breakfast",
         },
         snack: {
-          foods: ["Milktea"],
+          foods: ["Halo-halo"],
           photo: "/March29Snack.jpg",
         },
         lunch: {
-          foods: ["Pasta salad", "Grilled vegetables", "Sparkling water"],
-          photo: "/March29Lunch.jpg",
+          foods: ["Pancit canton", "Lumpia", "Sparkling water"],
+          photo: "/placeholder.svg?height=300&width=400&text=Pancit+Canton+Lunch",
         },
         dinner: {
-          foods: ["Pork tenderloin", "Mashed potatoes", "Steamed broccoli"],
-          photo: "/March29Dinner.jpg",
+          foods: ["Sinigang na baboy", "Steamed vegetables", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Sinigang+Dinner",
         },
       },
     },
@@ -118,20 +115,20 @@ export default function FoodActivityPage() {
       date: "2025-03-30",
       meals: {
         breakfast: {
-          foods: ["Avocado toast", "Poached egg", "Green smoothie"],
-          photo: "/March30Breakfast.jpg",
+          foods: ["Champorado", "Tuyo", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Champorado+Breakfast",
         },
         snack: {
-          foods: ["Buko shake"],
-          photo: "/March30Snacks.jpg",
+          foods: ["Buko juice"],
+          photo: "/March30Snack.jpg",
         },
         lunch: {
-          foods: ["Quinoa bowl", "Roasted vegetables", "Lemon water"],
-          photo: "/March30Lunch.jpg",
+          foods: ["Kare-kare", "Bagoong", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Kare+Kare+Lunch",
         },
         dinner: {
-          foods: ["Grilled chicken breast", "Sweet potato fries", "Asparagus"],
-          photo: "/March30Dinner.jpg",
+          foods: ["Grilled bangus", "Pinakbet", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Bangus+Dinner",
         },
       },
     },
@@ -139,20 +136,20 @@ export default function FoodActivityPage() {
       date: "2025-03-31",
       meals: {
         breakfast: {
-          foods: ["Chicken", "1 cup of rice", "Coconut flakes"],
+          foods: ["Silog meal", "Coffee"],
           photo: "/March31Breakfast.jpg",
         },
         snack: {
-          foods: ["Hawaiian pizza", "Meat delight pizza", "2 cups of water"],
+          foods: ["Biscuits", "Hot chocolate"],
           photo: "/March31Snack.jpg",
         },
         lunch: {
-          foods: ["Hawaiian pizza", "Meat delight pizza", "2 cups of water"],
-          photo: "/March31Lunch.jpg",
+          foods: ["Chicken adobo", "Rice", "Vegetables"],
+          photo: "/placeholder.svg?height=300&width=400&text=Chicken+Adobo+Lunch",
         },
         dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/March31Dinner.jpg",
+          foods: ["Grilled fish", "Rice", "Soup"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Fish+Dinner",
         },
       },
     },
@@ -160,20 +157,20 @@ export default function FoodActivityPage() {
       date: "2025-04-01",
       meals: {
         breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/April1Breakfast.jpg",
+          foods: ["Pandesal", "Coffee", "Cheese"],
+          photo: "/placeholder.svg?height=300&width=400&text=Pandesal+Breakfast",
         },
         snack: {
-          foods: ["Mango shake"],
+          foods: ["Turon", "Soda"],
           photo: "/April1Snack.jpg",
         },
         lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/April1Lunch.jpg",
+          foods: ["Beef caldereta", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Beef+Caldereta+Lunch",
         },
         dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/April1Dinner.jpg",
+          foods: ["Lechon kawali", "Rice", "Vegetables"],
+          photo: "/placeholder.svg?height=300&width=400&text=Lechon+Kawali+Dinner",
         },
       },
     },
@@ -181,506 +178,254 @@ export default function FoodActivityPage() {
       date: "2025-04-02",
       meals: {
         breakfast: {
-          foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-          photo: "/April2Breakfast.jpg",
+          foods: ["Tocilog", "Orange juice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Tocilog+Breakfast",
         },
         snack: {
-          foods: ["Hummus with carrots"],
-          photo: "/April2Snacks.jpg",
+          foods: ["Mais con yelo"],
+          photo: "/placeholder.svg?height=300&width=400&text=Mais+Con+Yelo",
         },
         lunch: {
-          foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-          photo: "/April2Lunch.jpg",
+          foods: ["Chicken curry", "Rice"],
+          photo: "/April2.jpg",
         },
         dinner: {
-          foods: ["Baked cod", "Rice pilaf", "Green salad"],
-          photo: "/April2Dinner.jpg",
+          foods: ["Grilled pork", "Rice", "Salad"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Pork+Dinner",
         },
       },
     },
     {
-    date: "2025-04-03",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April3Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April3Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April3Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April3Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-04",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April4Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April4Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April4Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April4Dinner.jpg",
+      date: "2025-04-04",
+      meals: {
+        breakfast: {
+          foods: ["Bangsilog", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Bangsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Buko pie", "Milk tea"],
+          photo: "/placeholder.svg?height=300&width=400&text=Buko+Pie+Snack",
+        },
+        lunch: {
+          foods: ["Sisig", "Rice", "Beer"],
+          photo: "/April4.jpg",
+        },
+        dinner: {
+          foods: ["Tinola", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Tinola+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-05",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April5Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April5Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April5Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April5Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-06",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April6Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April6Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April6Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April6Dinner.jpg",
+    {
+      date: "2025-04-07",
+      meals: {
+        breakfast: {
+          foods: ["Hotsilog", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Hotsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Bibingka", "Hot chocolate"],
+          photo: "/placeholder.svg?height=300&width=400&text=Bibingka+Snack",
+        },
+        lunch: {
+          foods: ["Menudo", "Rice"],
+          photo: "/April7.jpg",
+        },
+        dinner: {
+          foods: ["Grilled tilapia", "Rice", "Vegetables"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Tilapia+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-07",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April7Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April7Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April7Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April7Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-08",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April8Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April8Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April8Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April8Dinner.jpg",
+    {
+      date: "2025-04-09",
+      meals: {
+        breakfast: {
+          foods: ["Cornsilog", "Milk"],
+          photo: "/placeholder.svg?height=300&width=400&text=Cornsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Leche flan", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Leche+Flan+Snack",
+        },
+        lunch: {
+          foods: ["Bicol express", "Rice"],
+          photo: "/April9.jpeg",
+        },
+        dinner: {
+          foods: ["Grilled chicken", "Rice", "Soup"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Chicken+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-09",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April9Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April9Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April9Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April9Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-10",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April10Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April10Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April10Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April10Dinner.jpg",
+    {
+      date: "2025-04-11",
+      meals: {
+        breakfast: {
+          foods: ["Daingsilog", "Orange juice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Daingsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Ube halaya", "Milk"],
+          photo: "/placeholder.svg?height=300&width=400&text=Ube+Halaya+Snack",
+        },
+        lunch: {
+          foods: ["Pakbet", "Rice", "Fried fish"],
+          photo: "/April11.jpg",
+        },
+        dinner: {
+          foods: ["Bulalo", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Bulalo+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-11",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April11Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April11Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April11Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April11Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-12",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April12Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April12Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April12Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April12Dinner.jpg",
+    {
+      date: "2025-04-14",
+      meals: {
+        breakfast: {
+          foods: ["Spam silog", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Spam+Silog+Breakfast",
+        },
+        snack: {
+          foods: ["Taho", "Crackers"],
+          photo: "/placeholder.svg?height=300&width=400&text=Taho+Snack",
+        },
+        lunch: {
+          foods: ["Laing", "Rice", "Grilled pork"],
+          photo: "/April14.jpg",
+        },
+        dinner: {
+          foods: ["Fish sinigang", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Fish+Sinigang+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-13",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April13Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April13Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April13Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April13Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-14",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April14Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April14Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April14Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April14Dinner.jpg",
+    {
+      date: "2025-04-16",
+      meals: {
+        breakfast: {
+          foods: ["Longsilog", "Milk"],
+          photo: "/placeholder.svg?height=300&width=400&text=Longsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Biko", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Biko+Snack",
+        },
+        lunch: {
+          foods: ["Mechado", "Rice"],
+          photo: "/April16.jpg",
+        },
+        dinner: {
+          foods: ["Grilled bangus", "Rice", "Vegetables"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Bangus+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-15",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April15Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April15Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April15Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April15Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-16",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April16Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April16Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April16Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April16Dinner.jpg",
+    {
+      date: "2025-04-18",
+      meals: {
+        breakfast: {
+          foods: ["Chicksilog", "Orange juice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Chicksilog+Breakfast",
+        },
+        snack: {
+          foods: ["Maja blanca", "Hot chocolate"],
+          photo: "/placeholder.svg?height=300&width=400&text=Maja+Blanca+Snack",
+        },
+        lunch: {
+          foods: ["Dinuguan", "Rice", "Puto"],
+          photo: "/April18.jpg",
+        },
+        dinner: {
+          foods: ["Grilled squid", "Rice", "Salad"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Squid+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-17",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April17Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April17Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April17Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April17Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-18",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April18Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April18Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April18Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April18Dinner.jpg",
+    {
+      date: "2025-04-20",
+      meals: {
+        breakfast: {
+          foods: ["Beef tapa", "Rice", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Beef+Tapa+Breakfast",
+        },
+        snack: {
+          foods: ["Suman", "Latik"],
+          photo: "/placeholder.svg?height=300&width=400&text=Suman+Snack",
+        },
+        lunch: {
+          foods: ["Pork barbecue", "Rice", "Atchara"],
+          photo: "/placeholder.svg?height=300&width=400&text=Pork+Barbecue+Lunch",
+        },
+        dinner: {
+          foods: ["Chicken tinola", "Rice"],
+          photo: "/April20Dinner.jpg",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-19",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April19Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April19Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April19Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April19Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-20",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April20Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April20Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April20Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Misua with sardines", "Squid adobo", "2 cups of rice", "1 cup of water"],
-        photo: "/April20Dinner.jpg",
+    {
+      date: "2025-04-21",
+      meals: {
+        breakfast: {
+          foods: ["Porksilog", "Milk"],
+          photo: "/placeholder.svg?height=300&width=400&text=Porksilog+Breakfast",
+        },
+        snack: {
+          foods: ["Cassava cake", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Cassava+Cake+Snack",
+        },
+        lunch: {
+          foods: ["Morcon", "Rice", "Vegetables"],
+          photo: "/April21.jpg",
+        },
+        dinner: {
+          foods: ["Fish escabeche", "Rice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Fish+Escabeche+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-21",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April21Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April21Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April21Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April21Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-22",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April22Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April22Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April22Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April22Dinner.jpg",
+    {
+      date: "2025-04-23",
+      meals: {
+        breakfast: {
+          foods: ["Bangsilog", "Orange juice"],
+          photo: "/placeholder.svg?height=300&width=400&text=Bangsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Puto bumbong", "Hot chocolate"],
+          photo: "/placeholder.svg?height=300&width=400&text=Puto+Bumbong+Snack",
+        },
+        lunch: {
+          foods: ["Igado", "Rice"],
+          photo: "/April23.jpg",
+        },
+        dinner: {
+          foods: ["Grilled pork belly", "Rice", "Soup"],
+          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Pork+Belly+Dinner",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-23",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April23Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April23Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April23Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April23Dinner.jpg",
-      },
-    },
-  },
-  {
-    date: "2025-04-24",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April24Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April24Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Mediterranean salad", "Pita bread", "Herbal tea"],
-        photo: "/April24Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April24Dinner.jpg",
+    {
+      date: "2025-04-25",
+      meals: {
+        breakfast: {
+          foods: ["Cornedsilog", "Coffee"],
+          photo: "/placeholder.svg?height=300&width=400&text=Cornedsilog+Breakfast",
+        },
+        snack: {
+          foods: ["Buko salad", "Crackers"],
+          photo: "/placeholder.svg?height=300&width=400&text=Buko+Salad+Snack",
+        },
+        lunch: {
+          foods: ["Pork estofado", "Rice"],
+          photo: "/April25Lunch.jpg",
+        },
+        dinner: {
+          foods: ["Grilled chicken", "Rice", "Vegetables"],
+          photo: "/April25.jpg",
+        },
       },
     },
-  },
-  {
-    date: "2025-04-25",
-    meals: {
-      breakfast: {
-        foods: ["Chia pudding", "Fresh berries", "Coconut flakes"],
-        photo: "/April25Breakfast.jpg",
-      },
-      snack: {
-        foods: ["Hummus with carrots"],
-        photo: "/April25Snacks.jpg",
-      },
-      lunch: {
-        foods: ["Nilaga", "Sisig", "2 cups of rice", "Coke"],
-        photo: "/April25Lunch.jpg",
-      },
-      dinner: {
-        foods: ["Baked cod", "Rice pilaf", "Green salad"],
-        photo: "/April25Dinner.jpg",
-      },
-    },
-  },
   ]
 
   // Sample physical activity data with daily photos
@@ -707,143 +452,28 @@ export default function FoodActivityPage() {
     {
       date: "2025-03-28",
       day: "Friday",
-      photo: "/March28.jpg",
-      activities: [
-        { time: "8:00 AM", activity: "Swimming", duration: "100 minutes", intensity: "Moderate" },
-      ],
+      photo: "/March28.jpeg",
+      activities: [{ time: "8:00 AM", activity: "Swimming", duration: "100 minutes", intensity: "Moderate" }],
     },
     {
       date: "2025-03-31",
       day: "Monday",
       photo: "/March31.jpg",
-      activities: [
-        { time: "10:00 AM", activity: "Swimming", duration: "120 minutes", intensity: "Moderate" },
-      ],
+      activities: [{ time: "10:00 AM", activity: "Swimming", duration: "120 minutes", intensity: "Moderate" }],
     },
     {
       date: "2025-04-02",
       day: "Wednesday",
       photo: "/April2.jpg",
-      activities: [
-        { time: "6:30 AM", activity: "Running", duration: "50 minutes", intensity: "High" },
-      ],
+      activities: [{ time: "6:30 AM", activity: "Running", duration: "50 minutes", intensity: "High" }],
     },
     {
       date: "2025-04-04",
       day: "Friday",
       photo: "/April4.jpg",
-      activities: [
-        { time: "7:00 AM", activity: "Island Hopping", duration: "180 minutes", intensity: "High" },
-      ],
-    },
-    {
-      date: "2025-04-07",
-      day: "Monday",
-      photo: "/April7.jpg",
-      activities: [
-        { time: "5:50 PM", activity: "Walking", duration: "30 minutes", intensity: "Moderate" },
-        { time: "6:20 PM", activity: "Running", duration: "45 minutes", intensity: "High" },
-      ],
-    },
-    {
-      date: "2025-04-09",
-      day: "Wednesday",
-      photo: "/April9.jpg",
-      activities: [
-        { time: "5:00 PM", activity: "Walking", duration: "90 minutes", intensity: "Moderate" },
-      ],
-    },
-    {
-      date: "2025-04-11",
-      day: "Friday",
-      photo: "/April11.jpg",
-      activities: [
-        { time: "7:00 AM", activity: "Swimming", duration: "150 minutes", intensity: "Low" },
-      ],
-    },
-    {
-      date: "2025-04-14",
-      day: "Monday",
-      photo: "/April14.jpg",
-      activities: [
-        { time: "6:15 AM", activity: "Camping with bonfire", duration: "24 hours", intensity: "Moderate" },
-      ],
-    },
-    {
-      date: "2025-04-16",
-      day: "Wednesday",
-      photo: "/April16.jpg",
-      activities: [
-        { time: "6:00 AM", activity: "Walking", duration: "30 minutes", intensity: "Moderate" },
-        { time: "6:30 AM", activity: "Rock climbing", duration: "20 minutes", intensity: "Moderate" },
-      ],
-    },
-    {
-      date: "2025-04-18",
-      day: "Friday",
-      photo: "/April18.jpg",
-      activities: [
-        { time: "6:00 AM", activity: "Plank", duration: "30s x 5", intensity: "Moderate" },
-        { time: "6:15 AM", activity: "Squat", duration: "15x", intensity: "Low" },
-        { time: "6:30 AM", activity: "Step-ups", duration: "10 minutes", intensity: "Low" },
-      ],
-    },
-    {
-      date: "2025-04-21",
-      day: "Monday",
-      photo: "/April21.jpg",
-      activities: [
-        { time: "6:15 AM", activity: "Squat", duration: "20x", intensity: "Low" },
-        { time: "6:30 AM", activity: "Step-ups", duration: "15 minutes", intensity: "Moderate" },
-        { time: "6:50 AM", activity: "Push-ups", duration: "10x2", intensity: "Moderate" },
-      ],
-    },
-    {
-      date: "2025-04-23",
-      day: "Wednesday",
-      photo: "/April23.jpg",
-      activities: [
-        { time: "4:00 PM", activity: "Walking", duration: "50 minutes", intensity: "Moderate" },
-      ],
-    },
-    {
-      date: "2025-04-25",
-      day: "Friday",
-      photo: "/April25.jpg",
-      activities: [
-        { time: "5:30 AM", activity: "Stretching", duration: "30 minutes", intensity: "Low" },
-        { time: "6:00 AM", activity: "Hiking", duration: "90 minutes", intensity: "High" },
-      ],
+      activities: [{ time: "7:00 AM", activity: "Island Hopping", duration: "180 minutes", intensity: "High" }],
     },
   ]
-
-  const getMealIcon = (mealType: string) => {
-    switch (mealType) {
-      case "breakfast":
-        return "🌅"
-      case "snack":
-        return "🍎"
-      case "lunch":
-        return "🌞"
-      case "dinner":
-        return "🌙"
-      default:
-        return "🍽️"
-    }
-  }
-
-  const getIntensityColor = (intensity: string) => {
-    switch (intensity) {
-      case "Low":
-        return "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400"
-      case "Moderate":
-        return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400"
-      case "High":
-        return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400"
-      default:
-        return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400"
-    }
-  }
 
   return (
     <>
@@ -879,22 +509,26 @@ export default function FoodActivityPage() {
               </ul>
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg border">
-              <Image
-                src="https://pbs.twimg.com/media/E7iddi3VkAQeG5L.jpg"
+              <RobustImage
+                src="https://scontent.fceb6-3.fna.fbcdn.net/v/t39.30808-6/494001641_1257821296346643_8413648269398817876_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pqXYTkMRIdIQ7kNvwEUA0FC&_nc_oc=Adn0ThhsKpY6haX0BbzZ2czl2gYksc4KvumbKOCnHcGmSx-mEFaZr00xZSZxQSIAsmkZRZWzD39Lvw_DadR7-QVx&_nc_zt=23&_nc_ht=scontent.fceb6-3.fna&_nc_gid=TcBamuHDAW63lh3DRSam9w&oh=00_AfOkVA-aDOQuKiMuLkRA_zAF323noFz6sHzZP3jao6oS8w&oe=68488295"
                 alt="Pinggang Pinoy Food Guide"
                 fill
                 className="object-cover"
+                priority
+                fallbackSrc="/placeholder.svg?height=400&width=400&text=Pinggang+Pinoy+Guide"
               />
             </div>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="order-2 md:order-1 relative aspect-square overflow-hidden rounded-lg border">
-              <Image
+              <RobustImage
                 src="/Cocina.jpg"
                 alt="PATHFIT Cocina"
                 fill
                 className="object-cover"
+                priority
+                fallbackSrc="/placeholder.svg?height=400&width=400&text=PATHFIT+Cocina"
               />
             </div>
             <div className="order-1 md:order-2 space-y-4">
@@ -930,144 +564,7 @@ export default function FoodActivityPage() {
           </p>
         </div>
 
-        <Tabs defaultValue="food-log" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="food-log" className="flex items-center gap-2">
-              <Utensils className="h-4 w-4" />
-              Food Log
-            </TabsTrigger>
-            <TabsTrigger value="activity-tracker" className="flex items-center gap-2">
-              <Activity className="h-4 w-4" />
-              Activity Tracker
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="food-log" className="space-y-6">
-            <div className="grid gap-6">
-              {foodLog.map((day, index) => (
-                <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-                  <CardHeader className="bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/20 dark:to-blue-900/20">
-                    <CardTitle className="flex items-center gap-2">
-                      <Calendar className="h-5 w-5" />
-                      {new Date(day.date).toLocaleDateString("en-US", {
-                        weekday: "long",
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                      {Object.entries(day.meals).map(([mealType, mealData]) => (
-                        <div key={mealType} className="space-y-4">
-                          <h4 className="font-semibold text-lg flex items-center gap-2 capitalize">
-                            <span className="text-2xl">{getMealIcon(mealType)}</span>
-                            {mealType}
-                          </h4>
-
-                          {/* Meal Photo */}
-                          <div className="relative aspect-[3/2] overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-800 group">
-                            <Image
-                              src={mealData.photo || "/placeholder.svg"}
-                              alt={`${mealType} - ${mealData.foods.join(", ")}`}
-                              fill
-                              className="object-cover transition-transform duration-300 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-                          </div>
-
-                          {/* Food Items */}
-                          <ul className="space-y-2">
-                            {mealData.foods.map((food, foodIndex) => (
-                              <li
-                                key={foodIndex}
-                                className="text-sm bg-white dark:bg-slate-800 p-3 rounded-md border shadow-sm"
-                              >
-                                {food}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="activity-tracker" className="space-y-6">
-            <div className="grid gap-6">
-              {activitySchedule.map((day, index) => (
-                <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-                  <CardHeader className="bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20">
-                    <CardTitle className="flex items-center gap-2">
-                      <Calendar className="h-5 w-5" />
-                      {day.day} -{" "}
-                      {new Date(day.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      {/* Daily Activity Photo */}
-                      <div className="space-y-4">
-                        <h4 className="font-semibold text-lg flex items-center gap-2">
-                          <Activity className="h-5 w-5" />
-                          Daily Activity Photo
-                        </h4>
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-800 group">
-                          <Image
-                            src={day.photo || "/placeholder.svg"}
-                            alt={`${day.day} activities - ${day.activities.map((a) => a.activity).join(", ")}`}
-                            fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-                        </div>
-                      </div>
-
-                      {/* Activity Details */}
-                      <div className="space-y-4">
-                        <h4 className="font-semibold text-lg flex items-center gap-2">
-                          <Clock className="h-5 w-5" />
-                          Activities Schedule
-                        </h4>
-                        <div className="space-y-3">
-                          {day.activities.map((activity, activityIndex) => (
-                            <div
-                              key={activityIndex}
-                              className="bg-white dark:bg-slate-800 p-4 rounded-lg border shadow-sm space-y-3"
-                            >
-                              <div className="flex items-center justify-between">
-                                <h5 className="font-semibold text-base">{activity.activity}</h5>
-                                <Badge className={getIntensityColor(activity.intensity)}>{activity.intensity}</Badge>
-                              </div>
-                              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                                <div className="flex items-center gap-1">
-                                  <Clock className="h-4 w-4" />
-                                  {activity.time}
-                                </div>
-                                <div className="flex items-center gap-1">
-                                  <Activity className="h-4 w-4" />
-                                  {activity.duration}
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+        <ScrollableLogContainer foodLog={foodLog} activitySchedule={activitySchedule} />
       </Section>
 
       <Section>
@@ -1115,7 +612,10 @@ export default function FoodActivityPage() {
               icon: "⏱️",
             },
           ].map((stat, index) => (
-            <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-md">
+            <Card
+              key={index}
+              className="overflow-hidden transition-all duration-300 hover:shadow-md interactive-element"
+            >
               <CardHeader className="bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/20 dark:to-blue-900/20">
                 <div className="text-4xl">{stat.icon}</div>
                 <CardTitle className="mt-2">{stat.title}</CardTitle>

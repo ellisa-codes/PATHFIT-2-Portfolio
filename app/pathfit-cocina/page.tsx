@@ -2,6 +2,8 @@ import { PageHeader } from "@/components/page-header"
 import { Section } from "@/components/section"
 import { ImageGallery } from "@/components/image-gallery"
 import { RecipeSection } from "@/components/recipe-section"
+import { KrispiPrinceShowcase } from "@/components/krispi-prince-showcase"
+import { ErrorBoundary } from "@/components/error-boundary"
 
 export default function PathfitCocinaPage() {
   // Sample PATHFIT Cocina photos - cooking and food preparation activities
@@ -39,12 +41,19 @@ export default function PathfitCocinaPage() {
   ]
 
   return (
-    <>
+    <ErrorBoundary>
       <Section className="bg-gradient-to-r from-orange-50 to-green-50 dark:from-orange-900/20 dark:to-green-900/20">
         <PageHeader
           title="PATHFIT Cocina"
           description="Highlights and memories from our PATHFIT Cocina cooking activities"
         />
+      </Section>
+
+      {/* Krispi Prince Featured Recipe */}
+      <Section>
+        <ErrorBoundary>
+          <KrispiPrinceShowcase />
+        </ErrorBoundary>
       </Section>
 
       <Section>
@@ -76,7 +85,9 @@ export default function PathfitCocinaPage() {
               Below are some memorable moments captured during our PATHFIT Cocina cooking sessions. These photos
               showcase the passion, enthusiasm, and community spirit that made the event so special.
             </p>
-            <ImageGallery images={cocinaPhotos} />
+            <ErrorBoundary>
+              <ImageGallery images={cocinaPhotos} />
+            </ErrorBoundary>
           </div>
 
           <div className="space-y-4">
@@ -153,7 +164,11 @@ export default function PathfitCocinaPage() {
       </Section>
 
       {/* Recipe Section */}
-      <RecipeSection />
-    </>
+      <Section>
+        <ErrorBoundary>
+          <RecipeSection />
+        </ErrorBoundary>
+      </Section>
+    </ErrorBoundary>
   )
 }
