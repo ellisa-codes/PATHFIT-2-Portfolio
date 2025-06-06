@@ -13,7 +13,7 @@ const navItems = [
   { name: "Food & Activity", href: "/food-activity" },
   { name: "Advocacy", href: "/advocacy" },
   { name: "Midterm Reflection", href: "/midterm-reflection" },
-  { name: "PATHFIT Cocina", href: "/pe-day" },
+  { name: "PATHFIT Cocina", href: "/pathfit-cocina" },
   { name: "Finals Reflection", href: "/finals-reflection" },
   { name: "Health Trivias", href: "/health-trivias" },
   { name: "Message", href: "/message" },
