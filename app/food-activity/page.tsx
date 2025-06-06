@@ -57,7 +57,7 @@ export default function FoodActivityPage() {
         },
         snack: {
           foods: ["Pizza", "Mango shake", "Milktea"],
-          photo: "/March27Snacks.jpg",
+          photo: "/March27Snack.jpg",
         },
         lunch: {
           foods: ["Fried chicken", "1 cup of rice", "1 cup of water"],
@@ -94,20 +94,20 @@ export default function FoodActivityPage() {
       date: "2025-03-29",
       meals: {
         breakfast: {
-          foods: ["Tapsilog", "Banana", "Orange juice"],
-          photo: "/placeholder.svg?height=300&width=400&text=Tapsilog+Breakfast",
+          foods: ["Oatmeal with milk", "Sandwich"],
+          photo: "/March29Breakfast.jpg",
         },
         snack: {
           foods: ["Halo-halo"],
           photo: "/March29Snack.jpg",
         },
         lunch: {
-          foods: ["Pancit canton", "Lumpia", "Sparkling water"],
-          photo: "/placeholder.svg?height=300&width=400&text=Pancit+Canton+Lunch",
+          foods: ["Fried chicken", "Spaghetti"],
+          photo: "/March29Lunch.jpg",
         },
         dinner: {
-          foods: ["Sinigang na baboy", "Steamed vegetables", "Rice"],
-          photo: "/placeholder.svg?height=300&width=400&text=Sinigang+Dinner",
+          foods: ["Squid rings", "Fried fish", "Adobo", "2 cups of rice"],
+          photo: "/March29Dinner.jpg",
         },
       },
     },
@@ -115,20 +115,20 @@ export default function FoodActivityPage() {
       date: "2025-03-30",
       meals: {
         breakfast: {
-          foods: ["Champorado", "Tuyo", "Coffee"],
-          photo: "/placeholder.svg?height=300&width=400&text=Champorado+Breakfast",
+          foods: ["Fried chicken", "1 cup of rice"],
+          photo: "/March30Breakfast.jpg",
         },
         snack: {
           foods: ["Buko juice"],
           photo: "/March30Snack.jpg",
         },
         lunch: {
-          foods: ["Kare-kare", "Bagoong", "Rice"],
-          photo: "/placeholder.svg?height=300&width=400&text=Kare+Kare+Lunch",
+          foods: ["Fried fish", "1 cup of rice"],
+          photo: "/March30Lunch.jpg",
         },
         dinner: {
-          foods: ["Grilled bangus", "Pinakbet", "Rice"],
-          photo: "/placeholder.svg?height=300&width=400&text=Grilled+Bangus+Dinner",
+          foods: ["Chicken", "2 cups of rice"],
+          photo: "/March30Dinner.jpg",
         },
       },
     },
@@ -183,7 +183,7 @@ export default function FoodActivityPage() {
         },
         snack: {
           foods: ["Mais con yelo"],
-          photo: "/placeholder.svg?height=300&width=400&text=Mais+Con+Yelo",
+          photo: "/April3Snacks.jpeg",
         },
         lunch: {
           foods: ["Chicken curry", "Rice"],
