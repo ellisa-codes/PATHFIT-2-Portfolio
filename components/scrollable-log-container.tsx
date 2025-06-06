@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ResilientImage } from "@/components/resilient-image"
+import { RobustImage } from "@/components/robust-image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -39,6 +39,7 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
   const [currentFoodIndex, setCurrentFoodIndex] = useState(0)
   const [currentActivityIndex, setCurrentActivityIndex] = useState(0)
   const [isAutoScrolling, setIsAutoScrolling] = useState(true)
+  const [imageErrors, setImageErrors] = useState<Set<string>>(new Set())
 
   const itemsPerView = 3
 
@@ -49,7 +50,7 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
     const interval = setInterval(() => {
       setCurrentFoodIndex((prev) => (prev + itemsPerView >= foodLog.length ? 0 : prev + 1))
       setCurrentActivityIndex((prev) => (prev + itemsPerView >= activitySchedule.length ? 0 : prev + 1))
-    }, 6000) // Increased from 4000ms to 6000ms for slower transition
+    }, 6000)
 
     return () => clearInterval(interval)
   }, [isAutoScrolling, foodLog.length, activitySchedule.length])
@@ -98,6 +99,17 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
       default:
         return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400"
     }
+  }
+
+  // Enhanced image error handling
+  const handleImageError = (imageSrc: string) => {
+    setImageErrors((prev) => new Set([...prev, imageSrc]))
+  }
+
+  // Generate fallback image with meal/activity context
+  const generateFallbackImage = (type: string, context: string) => {
+    const emoji = type === "meal" ? "🍽️" : "🏃‍♂️"
+    return `/placeholder.svg?height=300&width=400&text=${emoji}+${encodeURIComponent(context)}`
   }
 
   const visibleFoodEntries = foodLog.slice(currentFoodIndex, currentFoodIndex + itemsPerView)
@@ -157,7 +169,7 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
             </Button>
           </div>
 
-          {/* Food Log Grid with slower transition */}
+          {/* Food Log Grid with enhanced image handling */}
           <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 transition-all duration-1000 ease-in-out">
             {visibleFoodEntries.map((day, index) => (
               <Card
@@ -184,15 +196,25 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
                         </h4>
 
                         <div className="relative aspect-[4/3] overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-800 group interactive-element">
-                          <ResilientImage
+                          <RobustImage
                             src={mealData.photo}
                             alt={`${mealType} - ${mealData.foods.join(", ")}`}
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            fallbackText={`${mealType} meal`}
+                            fallbackSrc={generateFallbackImage("meal", mealType)}
+                            priority={index < 3} // Prioritize first 3 images
                           />
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+
+                          {/* Loading indicator */}
+                          <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                            <div className="animate-pulse">
+                              <div className="w-12 h-12 bg-gray-300 dark:bg-gray-600 rounded-full flex items-center justify-center">
+                                <span className="text-2xl">{getMealIcon(mealType)}</span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                         <div className="space-y-1">
@@ -257,7 +279,7 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
             </Button>
           </div>
 
-          {/* Activity Log Grid with slower transition */}
+          {/* Activity Log Grid with enhanced image handling */}
           <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 transition-all duration-1000 ease-in-out">
             {visibleActivityEntries.map((day, index) => (
               <Card
@@ -283,14 +305,24 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
                         Daily Photo
                       </h4>
                       <div className="relative aspect-[4/3] overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-800 group interactive-element">
-                        <ResilientImage
+                        <RobustImage
                           src={day.photo}
                           alt={`${day.day} activities`}
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          fallbackText={`${day.day} activities`}
+                          fallbackSrc={generateFallbackImage("activity", day.day)}
+                          priority={index < 3} // Prioritize first 3 images
                         />
+
+                        {/* Loading indicator */}
+                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                          <div className="animate-pulse">
+                            <div className="w-12 h-12 bg-gray-300 dark:bg-gray-600 rounded-full flex items-center justify-center">
+                              <span className="text-2xl">🏃‍♂️</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -305,9 +337,7 @@ export function ScrollableLogContainer({ foodLog, activitySchedule }: Scrollable
                           <div key={activityIndex} className="bg-white dark:bg-slate-800 p-3 rounded border space-y-2">
                             <div className="flex items-center justify-between">
                               <h5 className="font-medium text-sm">{activity.activity}</h5>
-                              <Badge className={getIntensityColor(activity.intensity)} size="sm">
-                                {activity.intensity}
-                              </Badge>
+                              <Badge className={getIntensityColor(activity.intensity)}>{activity.intensity}</Badge>
                             </div>
                             <div className="flex items-center gap-3 text-xs text-muted-foreground">
                               <span>{activity.time}</span>
