@@ -409,20 +409,20 @@ export default function FoodActivityPage() {
       date: "2025-04-25",
       meals: {
         breakfast: {
-          foods: ["Cornedsilog", "Coffee"],
-          photo: "/placeholder.svg?height=300&width=400&text=Cornedsilog+Breakfast",
+          foods: ["Bacon", "2 Eggs", "1 cup of rice"],
+          photo: "/https://live.staticflickr.com/7013/6765424445_183bec145a_b.jpg",
         },
         snack: {
-          foods: ["Buko salad", "Crackers"],
-          photo: "/placeholder.svg?height=300&width=400&text=Buko+Salad+Snack",
+          foods: ["Kutsinta"],
+          photo: "/https://www.willflyforfood.net/wp-content/uploads/2022/04/filipino-snacks-kutsinta.jpg.webp",
         },
         lunch: {
           foods: ["Pork estofado", "Rice"],
           photo: "/April25Lunch.jpg",
         },
         dinner: {
-          foods: ["Grilled chicken", "Rice", "Vegetables"],
-          photo: "/April25.jpg",
+          foods: ["Vegetable", "1 cup of rice"],
+          photo: "/https://media.cnn.com/api/v1/images/stellar/prod/160520183311-21-filipino-dishes-pinakbet.jpg?q=w_3648,h_2736,x_0,y_0,c_fill",
         },
       },
     },
