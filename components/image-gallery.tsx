@@ -1,132 +1,57 @@
 "use client"
 
 import { useState } from "react"
-import { RobustImage } from "@/components/robust-image"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import Image from "next/image"
+import { cn } from "@/lib/utils"
 
 interface ImageGalleryProps {
-  images: Array<{
+  images: {
     src: string
     alt: string
     caption?: string
-  }>
+  }[]
 }
 
 export function ImageGallery({ images }: ImageGalleryProps) {
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null)
-
-  const openLightbox = (index: number) => {
-    setSelectedImageIndex(index)
-  }
-
-  const closeLightbox = () => {
-    setSelectedImageIndex(null)
-  }
-
-  const goToPrevious = () => {
-    if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex - 1 + images.length) % images.length)
-    }
-  }
-
-  const goToNext = () => {
-    if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex + 1) % images.length)
-    }
-  }
-
-  if (!images || images.length === 0) {
-    return (
-      <div className="text-center py-8">
-        <p className="text-muted-foreground">No images available</p>
-      </div>
-    )
-  }
+  const [selectedImage, setSelectedImage] = useState(0)
 
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="group cursor-pointer overflow-hidden rounded-lg border bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-shadow"
-            onClick={() => openLightbox(index)}
-          >
-            <div className="relative aspect-video overflow-hidden">
-              <RobustImage
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover transition-transform group-hover:scale-105"
-                fallbackSrc={`/placeholder.svg?height=400&width=600&text=Gallery+Image+${index + 1}`}
-              />
-            </div>
-            {image.caption && (
-              <div className="p-3">
-                <p className="text-sm text-muted-foreground">{image.caption}</p>
-              </div>
-            )}
+    <div className="space-y-4">
+      <div className="relative aspect-video overflow-hidden rounded-lg border shadow-lg hover:shadow-xl transition-all duration-500 group">
+        <Image
+          src={images[selectedImage].src || "/placeholder.svg"}
+          alt={images[selectedImage].alt}
+          fill
+          className="object-cover transition-all duration-500 group-hover:scale-105"
+        />
+        {images[selectedImage].caption && (
+          <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4 text-center text-sm text-white transition-all duration-300 group-hover:from-black/90">
+            {images[selectedImage].caption}
           </div>
+        )}
+      </div>
+      <div className="grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6">
+        {images.map((image, index) => (
+          <button
+            key={index}
+            onClick={() => setSelectedImage(index)}
+            className={cn(
+              "relative aspect-square overflow-hidden rounded-md border transition-all duration-300 hover:opacity-90 hover:scale-105 hover:shadow-md group",
+              selectedImage === index
+                ? "ring-2 ring-primary ring-offset-2 shadow-lg scale-105"
+                : "hover:ring-1 hover:ring-primary/50",
+            )}
+          >
+            <Image
+              src={image.src || "/placeholder.svg"}
+              alt={image.alt}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+          </button>
         ))}
       </div>
-
-      {/* Lightbox Modal */}
-      {selectedImageIndex !== null && (
-        <Dialog open={selectedImageIndex !== null} onOpenChange={closeLightbox}>
-          <DialogContent className="max-w-4xl w-full h-full max-h-[90vh] p-0">
-            <div className="relative w-full h-full flex items-center justify-center bg-black">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute top-4 right-4 z-10 text-white hover:bg-white/20"
-                onClick={closeLightbox}
-              >
-                <X className="h-4 w-4" />
-              </Button>
-
-              {images.length > 1 && (
-                <>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
-                    onClick={goToPrevious}
-                  >
-                    <ChevronLeft className="h-6 w-6" />
-                  </Button>
-
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
-                    onClick={goToNext}
-                  >
-                    <ChevronRight className="h-6 w-6" />
-                  </Button>
-                </>
-              )}
-
-              <div className="relative w-full h-full">
-                <RobustImage
-                  src={images[selectedImageIndex].src}
-                  alt={images[selectedImageIndex].alt}
-                  fill
-                  className="object-contain"
-                  fallbackSrc={`/placeholder.svg?height=600&width=800&text=Gallery+Image+${selectedImageIndex + 1}`}
-                />
-              </div>
-
-              {images[selectedImageIndex].caption && (
-                <div className="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg p-4">
-                  <p className="text-white text-center">{images[selectedImageIndex].caption}</p>
-                </div>
-              )}
-            </div>
-          </DialogContent>
-        </Dialog>
-      )}
-    </>
+    </div>
   )
 }
