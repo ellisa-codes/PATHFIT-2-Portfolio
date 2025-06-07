@@ -27,10 +27,10 @@ const portfolioSections = [
     imageAlt: "Mental health awareness and advocacy campaign",
   },
   {
-    id: "pathfit-cocina",
+    id: "pe-day",
     title: "PATHFIT Cocina",
     description: "Photos and highlights from our cooking activities and healthy meal preparation",
-    link: "/pathfit-cocina",
+    link: "/pe-day",
     gradient: "from-blue-400 to-green-400",
     image: "/Cocina.jpg",
     imageAlt: "PATHFIT Cocina cooking activities and healthy meal preparation",
